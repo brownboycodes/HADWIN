@@ -53,7 +53,7 @@
 
 
 
-## ATTRIBUTIONS 🙏🏻❤
+## ATTRIBUTIONS 🙏❤
 
   [***PayPal***](http://www.paypal.com/)
 
@@ -81,4 +81,4 @@ This project is not affiliated/sponsored with ***PayPal*** or any of its parent 
 
 ---
 
-*Anyone replicating this project or reproducing this project as their own is being requested to stop being an asshole and try building it on their own, it will help in better self-awareness of their app development skills and also properly attribute/give credit the people and resources from which inspiration has been drawn from.*
+*Anyone replicating this project or reproducing this project as their own is being requested to stop being an asshole and try building it on their own, it will help in better self-awareness of their app development skills and also properly attribute/give credit to the people and resources from which inspiration has been drawn from.*

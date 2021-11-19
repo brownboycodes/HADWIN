@@ -1,6 +1,10 @@
-# *PayPal* Concept 
+# *PayPal* concept 
 
 
+
+![paypal cover image](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/2560px-PayPal.svg.png)
+
+<br>
 
 ***PayPal*** provides an easy and quick ⚡ way to send and request 📨 money 💵 online 🛰️. You can transfer money 💸 (abroad 🌎) to family 👨‍👩‍👧‍👦, friends, online shops 🛒, and auction sites like eBay.
 

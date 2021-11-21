@@ -59,11 +59,14 @@
 
 ### CREDITS 🙏❤
 
-  [***PayPal***](http://www.paypal.com/)
+  ❤ [***PayPal***](http://www.paypal.com/)
 
-  inspiration for the UI has been drawn from: [PayPal App Redesign Concept](https://dribbble.com/shots/14114443-PayPal-App-Redesign-Conept) by [Vadim Demenko](https://dribbble.com/vdemenko)
+  ❤ inspiration for the UI has been drawn from: [PayPal App Redesign Concept](https://dribbble.com/shots/14114443-PayPal-App-Redesign-Conept) by [Vadim Demenko](https://dribbble.com/vdemenko)
 
-  the [cover image](https://wearemucho.com/project/paypal-illustration/) for the [GitHub repository of this project](https://github.com/brownboycodes/Paypal-Concept-Flutter) has been taken from [mucho](https://wearemucho.com/)
+  ❤ the [cover image](https://wearemucho.com/project/paypal-illustration/) for the [GitHub repository of this project](https://github.com/brownboycodes/Paypal-Concept-Flutter) has been taken from [mucho](https://wearemucho.com/)
+
+  ❤ the [logo](https://www.flaticon.com/premium-icon/paypal_2504931?term=paypal&page=1&position=1&page=1&position=1&related_id=2504931&origin=style)  <img src="assets/images/paypal-logo-rounded-square.png" alt="app logo" width="36"/> for this [app](https://github.com/brownboycodes/Paypal-Concept-Flutter) has been made by [Ruslan Babkin](https://www.flaticon.com/authors/ruslan-babkin) from [Flaticon](https://www.flaticon.com/)
+
 
 
 

@@ -35,6 +35,22 @@
 
   ⚒ **Platforms**: Android 🤖, iOS 🍎
 
+<br>
+
+
+
+### Available Screens
+
+- [ ] Login Screen
+- [ ] User Registration Screen
+- [ ] Dashboard Screen
+- [ ] Wallet Screen
+- [ ] Fund Transfer Screen
+- [ ] User Profile Screen
+- [ ] Contacts Screen
+- [ ] User Settings  Screen
+- [ ] Error Screen
+
 
 
 <br>
@@ -69,7 +85,7 @@
 
 
 
-
+<br>
 
 
 ---

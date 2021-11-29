@@ -77,11 +77,13 @@
 
   ❤ [***PayPal***](http://www.paypal.com/)
 
-  ❤ inspiration for the UI has been drawn from: [PayPal App Redesign Concept](https://dribbble.com/shots/14114443-PayPal-App-Redesign-Conept) by [Vadim Demenko](https://dribbble.com/vdemenko)
+  ❤ inspiration for the UI has been drawn from: [PayPal App Redesign Concept](https://dribbble.com/shots/14114443-PayPal-App-Redesign-Conept) by [Vadim Demenko](https://dribbble.com/vdemenko) , follow Vadim on [![Dribbble](https://img.shields.io/badge/Dribbble-EA4C89?style=for-the-badge&logo=dribbble&logoColor=white)](https://dribbble.com/vdemenko) , [![Behance](https://img.shields.io/badge/Behance-1769ff?style=for-the-badge&logo=behance&logoColor=white)](https://www.behance.net/vdemenko) , [![Instagram](https://img.shields.io/badge/@vademenko-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/vademenko/) , [![Twitter](https://img.shields.io/badge/@vademenko-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/vademenko), [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vdemenko/)
 
   ❤ the [cover image](https://wearemucho.com/project/paypal-illustration/) for the [GitHub repository of this project](https://github.com/brownboycodes/Paypal-Concept-Flutter) has been taken from [mucho](https://wearemucho.com/)
 
   ❤ the [logo](https://www.flaticon.com/premium-icon/paypal_2504931?term=paypal&page=1&position=1&page=1&position=1&related_id=2504931&origin=style)  <img src="assets/images/paypal-logo-rounded-square.png" alt="app logo" width="36"/> for this [app](https://github.com/brownboycodes/Paypal-Concept-Flutter) has been made by [Ruslan Babkin](https://www.flaticon.com/authors/ruslan-babkin) from [Flaticon](https://www.flaticon.com/)
+
+  ❤ the image shown on **help for logging in**  screen  <img src="assets/images/dr-monkey.jpg" alt="Dr Monkey" width="128"/>   is titled [**Dr Monkey**](https://dribbble.com/shots/4203971-DR-MONKEY/attachments/10259300?mode=media) made by [Carlo Beranek](https://carloberanek.com/) , follow Carlo on [![Dribbble](https://img.shields.io/badge/Dribbble-EA4C89?style=for-the-badge&logo=dribbble&logoColor=white)](https://dribbble.com/CarloBeranek) , [![Instagram](https://img.shields.io/badge/@carloberanek-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/carloberanek/) , [![Twitter](https://img.shields.io/badge/@CarloBeranek-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/CarloBeranek), [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white)](https://www.facebook.com/beranekillustrations)
 
 
 

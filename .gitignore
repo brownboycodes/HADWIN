@@ -121,3 +121,8 @@ temp
 
 # work in progress files
 lib/screens/test_home_screen.dart
+
+assets/images/dr-monkey.jpg
+lib/components/sign_up_screen/
+lib/screens/login_help_screen.dart
+lib/screens/sign_up_screen.dart

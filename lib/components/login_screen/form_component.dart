@@ -154,7 +154,7 @@ class LoginFormComponentState extends State<LoginFormComponent> {
                           ScaffoldMessenger.of(context).showSnackBar(
                             SnackBar(
                               content:
-                                  Text('Please enter proper input details'),
+                                  Text('Please provide all required details'),
                               backgroundColor: Colors.red,
                             ),
                           );

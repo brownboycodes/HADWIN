@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:paypal_concept/components/login_screen/form_component.dart';
+import 'package:paypal_concept/screens/login_help_screen.dart';
+import 'package:paypal_concept/screens/sign_up_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -33,7 +35,12 @@ class _LoginScreenState extends State<LoginScreen> {
                     'Having trouble logging in?',
                     style: TextStyle(fontSize: 14, color: Color(0xFF929BAB)),
                   ),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => LoginHelpScreen()));
+                  },
                 ),
               ),
               width: double.infinity,
@@ -49,7 +56,12 @@ class _LoginScreenState extends State<LoginScreen> {
                     'Sign up',
                     style: TextStyle(fontSize: 14, color: Color(0xFF929BAB)),
                   ),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => SignUpScreen()));
+                  },
                 ),
               ),
               width: double.infinity,

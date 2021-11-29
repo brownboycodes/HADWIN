@@ -121,6 +121,3 @@ temp
 
 # work in progress files
 lib/screens/test_home_screen.dart
-
-lib/components/sign_up_screen/
-lib/screens/sign_up_screen.dart

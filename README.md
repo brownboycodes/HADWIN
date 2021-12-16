@@ -41,16 +41,19 @@
 
 ### Available Screens
 
-- [ ] Login Screen
-- [ ] User Registration Screen
-- [ ] Dashboard Screen
+- [x] Login Screen
+- [x] User Registration Screen
+- [ ] Default Layout Screen 🚧
+- [ ] Dashboard Screen 🚧
 - [ ] Wallet Screen
 - [ ] Fund Transfer Screen
-- [ ] User Profile Screen
+- [ ] User Profile Screen 🚧
 - [ ] Contacts Screen
 - [ ] User Settings  Screen
-- [ ] Error Screen
+- [ ] Error Screen 🚧
 
+<br>
+🚧 indicates Work in Progress
 
 
 <br>

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:paypal_concept/screens/login_screen.dart';
-// import 'package:paypal_concept/screens/test_home_screen.dart';
+// import 'package:paypal_concept/screens/login_screen.dart';
+import 'package:paypal_concept/components/main_app_screen/tabbed_layout_component.dart';
 
 void main() {
   runApp(const MyApp());
@@ -36,7 +36,8 @@ class MyApp extends StatelessWidget {
         ),
         */
         // home: HomeScreen(),
-        home: LoginScreen(),
+        home: TabbedLayoutComponent(),
+        // home: LoginScreen(),
         debugShowCheckedModeBanner: false);
   }
 }

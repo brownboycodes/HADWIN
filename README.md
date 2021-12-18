@@ -41,16 +41,19 @@
 
 ### Available Screens
 
-- [ ] Login Screen
-- [ ] User Registration Screen
-- [ ] Dashboard Screen
+- [x] Login Screen
+- [x] User Registration Screen
+- [ ] Default Layout Screen 🚧
+- [ ] Dashboard Screen 🚧
 - [ ] Wallet Screen
 - [ ] Fund Transfer Screen
-- [ ] User Profile Screen
+- [ ] User Profile Screen 🚧
 - [ ] Contacts Screen
 - [ ] User Settings  Screen
-- [ ] Error Screen
+- [ ] Error Screen 🚧
 
+<br>
+🚧 indicates Work in Progress
 
 
 <br>
@@ -75,13 +78,15 @@
 
 ### CREDITS 🙏❤
 
-  ❤ [***PayPal***](http://www.paypal.com/)
+  ❤ [***PayPal***](http://www.paypal.com/) , [Sign up for free](https://www.paypal.com/in/webapps/mpp/account-selection?pros=1 "Happy shopping with PayPal") , to install the real *PayPal* app 🛒🛍,  you can  :  <a href="https://apps.apple.com/us/app/paypal-send-shop-manage/id283646709?itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 10.4px; width: 200px; height: 66.4px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1549152000&h=b7baf30a2e9fb8abbb18c696b01911bc" alt="Download on the App Store" style="border-radius: 10.4px; width: 200px; height: 66.4px;"></a>  or  [<img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" height="83px"/>](https://play.google.com/store/apps/details?id=com.paypal.android.p2pmobile&hl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1) 
 
-  ❤ inspiration for the UI has been drawn from: [PayPal App Redesign Concept](https://dribbble.com/shots/14114443-PayPal-App-Redesign-Conept) by [Vadim Demenko](https://dribbble.com/vdemenko)
+  ❤ inspiration for the UI has been drawn from: [PayPal App Redesign Concept](https://dribbble.com/shots/14114443-PayPal-App-Redesign-Conept) by [Vadim Demenko](https://dribbble.com/vdemenko) , follow Vadim on [![Dribbble](https://img.shields.io/badge/Dribbble-EA4C89?style=for-the-badge&logo=dribbble&logoColor=white)](https://dribbble.com/vdemenko)  [![Behance](https://img.shields.io/badge/Behance-1769ff?style=for-the-badge&logo=behance&logoColor=white)](https://www.behance.net/vdemenko)  [![Instagram](https://img.shields.io/badge/@vademenko-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/vademenko/)  [![Twitter](https://img.shields.io/badge/@vademenko-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/vademenko)  [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vdemenko/)
 
-  ❤ the [cover image](https://wearemucho.com/project/paypal-illustration/) for the [GitHub repository of this project](https://github.com/brownboycodes/Paypal-Concept-Flutter) has been taken from [mucho](https://wearemucho.com/)
+  ❤ the [cover image](https://wearemucho.com/project/paypal-illustration/) for the [GitHub repository of this project](https://github.com/brownboycodes/Paypal-Concept-Flutter) has been taken from [Mucho](https://wearemucho.com/) , follow  **Mucho** on  [![Behance](https://img.shields.io/badge/Behance-1769ff?style=for-the-badge&logo=behance&logoColor=white)](https://www.behance.net/muchodesign)  [![Instagram](https://img.shields.io/badge/@wearemucho-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/wearemucho/)  [![Twitter](https://img.shields.io/badge/@wearemucho-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/wearemucho)  [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/mucho/)  [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white)](https://www.facebook.com/muchostudio/) 
 
-  ❤ the [logo](https://www.flaticon.com/premium-icon/paypal_2504931?term=paypal&page=1&position=1&page=1&position=1&related_id=2504931&origin=style)  <img src="assets/images/paypal-logo-rounded-square.png" alt="app logo" width="36"/> for this [app](https://github.com/brownboycodes/Paypal-Concept-Flutter) has been made by [Ruslan Babkin](https://www.flaticon.com/authors/ruslan-babkin) from [Flaticon](https://www.flaticon.com/)
+  ❤ the [logo](https://www.flaticon.com/premium-icon/paypal_2504931?term=paypal&page=1&position=1&page=1&position=1&related_id=2504931&origin=style)  <img src="assets/images/paypal-logo-rounded-square.png" alt="app logo" width="36"/> for this [app](https://github.com/brownboycodes/Paypal-Concept-Flutter) has been taken from [Flaticon](https://www.flaticon.com/authors/ruslan-babkin) and it has been made by [Ruslan Babkin](http://ruslanbabkin.com/) ,  follow  Ruslan on [![Dribbble](https://img.shields.io/badge/Dribbble-EA4C89?style=for-the-badge&logo=dribbble&logoColor=white)](https://dribbble.com/ruslanbabkin)  [![Behance](https://img.shields.io/badge/Behance-1769ff?style=for-the-badge&logo=behance&logoColor=white)](https://www.behance.net/ruslanbabkin)  [![Instagram](https://img.shields.io/badge/@ruslanbabkin-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/ruslanbabkin/) 
+
+  ❤ the image shown on **help for logging in**  screen  <img src="assets/images/dr-monkey.jpg" alt="Dr Monkey" width="128"/>   is titled [**Dr Monkey**](https://dribbble.com/shots/4203971-DR-MONKEY/attachments/10259300?mode=media) made by [Carlo Beranek](https://carloberanek.com/) , follow Carlo on [![Dribbble](https://img.shields.io/badge/Dribbble-EA4C89?style=for-the-badge&logo=dribbble&logoColor=white)](https://dribbble.com/CarloBeranek)  [![Instagram](https://img.shields.io/badge/@carloberanek-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/carloberanek/)  [![Twitter](https://img.shields.io/badge/@CarloBeranek-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/CarloBeranek)  [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white)](https://www.facebook.com/beranekillustrations)
 
 
 

@@ -118,3 +118,8 @@ doc/api/
 
 #local
 temp
+
+# work in progress files
+
+#local-test-data
+assets/data

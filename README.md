@@ -1,112 +1,90 @@
-# *PayPal* concept 
+# HADWIN
 
+<!-- <img src="./assets/images/hadwin_system/hadwin-banner.png" title="" alt="HADWIN" width="789"> -->
 
-
-![paypal cover image](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/2560px-PayPal.svg.png)
-
-<br>
-
-***PayPal*** provides an easy and quick ⚡ way to send and request 📨 money 💵 online 🛰️. You can transfer money 💸 (abroad 🌎) to family 👨‍👩‍👧‍👦, friends, online shops 🛒, and auction sites like eBay.
-
-
-
-
+![hadwin banner](./assets/images/hadwin_system/hadwin-banner.png)
 
 <br>
 
-💡 To learn more about ***PayPal*** go to:
+> **HADWIN** is a prototype of a fund transfer app created from UI designs discovered on Dribbble, Pinterest and Behance. **HADWIN** has been built using the [Flutter](https://flutter.dev/) framework. 
 
-  🔗 [what is PayPal and how does it work?](https://www.paypal.com/be/smarthelp/article/what-is-paypal-and-how-does-it-work-faq1655 "what is PayPal and how does it work?")
-  🔗 [PayPal basics](https://www.paypal.com/ca/smarthelp/topic/PAYPAL_BASICS2 "basics of PayPal")
+Since this is a prototype users cannot send or receive real money, and to save costs JSON data is being used instead of data from a dedicated database, transaction and card data will be saved on the users device itself and not shared with the server. 
 
+<br>
 
+![FruitCastle banner](https://fruitcastle.herokuapp.com/dist/images/fruitcastle_logo_banner/fruitcastle-logo-banner-ae2012-212529-ffffff.png)
+
+[FruitCastle](https://fruitcastle.herokuapp.com/) ([source code 💡](https://github.com/brownboycodes/FruitCastle)) is a server created using [Python](https://www.python.org/) and [Flask](https://flask.palletsprojects.com/), which hosts the data being used to create simulation for authorizing access to the features to the app and making transactions.
+
+If users want to test the QR code scanning feature of HADWIN, they are requested to go to [https://fruitcastle.herokuapp.com/hadwin/v2/qr-code-interpretter/random](https://fruitcastle.herokuapp.com/hadwin/v2/qr-code-interpretter/random) to obtain a random QR code image.
+
+Users are requested to rest assured as no personal data is being saved on the server and if they are still concerned about their privacy users are allowed to test the app with the [mock data](./docs/HADWIN_WIKI.md) only.
+
+<br>
 
 <br>
 
 ---
 
-## Case Study 📑
-
-
-
-  📦 **Frameworks/Libraries**: Flutter
-
-  🏗 **Languages**: Dart, Swift, Kotlin, Objective-C
-
-  ⚒ **Platforms**: Android 🤖, iOS 🍎
-
 <br>
-
-
 
 ### Available Screens
 
 - [x] Login Screen
 - [x] User Registration Screen
-- [ ] Default Layout Screen 🚧
-- [ ] Dashboard Screen 🚧
-- [ ] Wallet Screen
-- [ ] Fund Transfer Screen
-- [ ] User Profile Screen 🚧
-- [ ] Contacts Screen
-- [ ] User Settings  Screen
-- [ ] Error Screen 🚧
+- [x] Choose Username Screen
+- [x] Default Tab Layout Screen 
+- [x] Home/Dashboard Screen 
+- [x] Contacts Screen
+- [x] Businesses & Contacts Screen
+- [x] Wallet Screen
+- [x] Add Card Screen
+- [x] Add Card Status Screen
+- [x] Fund Transfer Screen
+- [x] Transaction Status Screen
+- [x] Transaction Receipt Screen
+- [x] Settings Screen
+- [x] License Page Screen
+- [x] QR Code Screen
+- [x] QR Code Scanner Screen
+- [x] MarkDown Viewer Screen
+- [x] Error Screen
 
 <br>
 🚧 indicates Work in Progress
 
-
 <br>
-
-#### 📱 Test Device Info
-
-| COMPONENT              | DETAILS                 |
-| ---------------------- | ----------------------- |
-| device                 | Samsung Galaxy J7 Prime |
-| CPU build              | android-arm64           |
-| Android Version        | 6.0.1                   |
-| API                    | 23                      |
-| Screen diagonal length | 5.5 inches              |
-
-
 
 <br>
 
 ---
 
+### CREDITS 🌟
 
+  ⭐ [PayPal App Redesign Concept](https://dribbble.com/shots/14114443-PayPal-App-Redesign-Conept) by [Vadim Demenko](https://dribbble.com/vdemenko) , follow Vadim on [![Dribbble](https://img.shields.io/badge/Dribbble-EA4C89?style=for-the-badge&logo=dribbble&logoColor=white)](https://dribbble.com/vdemenko)  [![Behance](https://img.shields.io/badge/Behance-1769ff?style=for-the-badge&logo=behance&logoColor=white)](https://www.behance.net/vdemenko)  [![Instagram](https://img.shields.io/badge/instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/vademenko/)  [![Twitter](https://img.shields.io/badge/twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/vademenko)  [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vdemenko/)
 
-### CREDITS 🙏❤
+  ⭐[ Credit card - Checkout flow (AMEX)](https://dribbble.com/shots/2187649-Credit-card-Checkout-flow-AMEX) by [Ramakrishna Venkatesan](https://dribbble.com/RamakrishnaUX), follow Ramakrishna on  [![Dribbble](https://img.shields.io/badge/Dribbble-EA4C89?style=for-the-badge&logo=dribbble&logoColor=white)](https://dribbble.com/RamakrishnaUX)  [![Behance](https://img.shields.io/badge/Behance-1769ff?style=for-the-badge&logo=behance&logoColor=white)](https://www.behance.net/RamakrishnaV)  [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/RamakrishnaUX)  [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ramakrishnaux)  [![Instagram](https://img.shields.io/badge/instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/RamakrishnaUX/)  [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white)](https://www.facebook.com/Ramakrishna.design)
 
-  ❤ [***PayPal***](http://www.paypal.com/) , [Sign up for free](https://www.paypal.com/in/webapps/mpp/account-selection?pros=1 "Happy shopping with PayPal") , to install the real *PayPal* app 🛒🛍,  you can  :  <a href="https://apps.apple.com/us/app/paypal-send-shop-manage/id283646709?itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 10.4px; width: 200px; height: 66.4px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1549152000&h=b7baf30a2e9fb8abbb18c696b01911bc" alt="Download on the App Store" style="border-radius: 10.4px; width: 200px; height: 66.4px;"></a>  or  [<img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" height="83px"/>](https://play.google.com/store/apps/details?id=com.paypal.android.p2pmobile&hl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1) 
-
-  ❤ inspiration for the UI has been drawn from: [PayPal App Redesign Concept](https://dribbble.com/shots/14114443-PayPal-App-Redesign-Conept) by [Vadim Demenko](https://dribbble.com/vdemenko) , follow Vadim on [![Dribbble](https://img.shields.io/badge/Dribbble-EA4C89?style=for-the-badge&logo=dribbble&logoColor=white)](https://dribbble.com/vdemenko)  [![Behance](https://img.shields.io/badge/Behance-1769ff?style=for-the-badge&logo=behance&logoColor=white)](https://www.behance.net/vdemenko)  [![Instagram](https://img.shields.io/badge/@vademenko-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/vademenko/)  [![Twitter](https://img.shields.io/badge/@vademenko-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/vademenko)  [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vdemenko/)
-
-  ❤ the [cover image](https://wearemucho.com/project/paypal-illustration/) for the [GitHub repository of this project](https://github.com/brownboycodes/Paypal-Concept-Flutter) has been taken from [Mucho](https://wearemucho.com/) , follow  **Mucho** on  [![Behance](https://img.shields.io/badge/Behance-1769ff?style=for-the-badge&logo=behance&logoColor=white)](https://www.behance.net/muchodesign)  [![Instagram](https://img.shields.io/badge/@wearemucho-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/wearemucho/)  [![Twitter](https://img.shields.io/badge/@wearemucho-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/wearemucho)  [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/mucho/)  [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white)](https://www.facebook.com/muchostudio/) 
-
-  ❤ the [logo](https://www.flaticon.com/premium-icon/paypal_2504931?term=paypal&page=1&position=1&page=1&position=1&related_id=2504931&origin=style)  <img src="assets/images/paypal-logo-rounded-square.png" alt="app logo" width="36"/> for this [app](https://github.com/brownboycodes/Paypal-Concept-Flutter) has been taken from [Flaticon](https://www.flaticon.com/authors/ruslan-babkin) and it has been made by [Ruslan Babkin](http://ruslanbabkin.com/) ,  follow  Ruslan on [![Dribbble](https://img.shields.io/badge/Dribbble-EA4C89?style=for-the-badge&logo=dribbble&logoColor=white)](https://dribbble.com/ruslanbabkin)  [![Behance](https://img.shields.io/badge/Behance-1769ff?style=for-the-badge&logo=behance&logoColor=white)](https://www.behance.net/ruslanbabkin)  [![Instagram](https://img.shields.io/badge/@ruslanbabkin-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/ruslanbabkin/) 
-
-  ❤ the image shown on **help for logging in**  screen  <img src="assets/images/dr-monkey.jpg" alt="Dr Monkey" width="128"/>   is titled [**Dr Monkey**](https://dribbble.com/shots/4203971-DR-MONKEY/attachments/10259300?mode=media) made by [Carlo Beranek](https://carloberanek.com/) , follow Carlo on [![Dribbble](https://img.shields.io/badge/Dribbble-EA4C89?style=for-the-badge&logo=dribbble&logoColor=white)](https://dribbble.com/CarloBeranek)  [![Instagram](https://img.shields.io/badge/@carloberanek-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/carloberanek/)  [![Twitter](https://img.shields.io/badge/@CarloBeranek-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/CarloBeranek)  [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white)](https://www.facebook.com/beranekillustrations)
-
-
+  ⭐ [Auto Location Switching & Transaction Receipt](https://dribbble.com/shots/3669170-Auto-Location-Switching-Transaction-Receipt) by [Nimasha Perera](https://www.nimashaperera.com/), follow Nimasha on [![Behance](https://img.shields.io/badge/Behance-1769ff?style=for-the-badge&logo=behance&logoColor=white)](https://www.behance.net/nimashasperera)  [![Dribbble](https://img.shields.io/badge/Dribbble-EA4C89?style=for-the-badge&logo=dribbble&logoColor=white)](https://dribbble.com/nimasha_sperera/)  [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/nimasha_perera)  [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nimashaperera/)  [![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@nimasha_perera)
 
 <br>
-
 
 ---
 
+### ⚠ IMPORTANT ⚠
 
-
-### ⚠ DISCLAIMER ⚠
-
-This project is not affiliated/sponsored with ***PayPal*** or any of its parent or subsidiary organizations. It is 🚨 <span style="background-color: #FFFF00">**NOT FOR COMMERCIAL USE**</span> 🚨. It has been and is being created purely out of my own interest in building a sophisticated payment system application to test my skills and add value to my portfolio. And hence it will not function like real products of ***PayPal***, *users cannot transfer real money through this application (as of now)*, users are warned and forbidden from using real credit/debit card numbers or bank account numbers. Users may and should only test this application with mock data provided from my personal API hosting server (**Common API Server** [source code 💡](https://github.com/brownboycodes/common-api-server) ). Account numbers and User details are fictitious, they have been generated randomly out of imagination, any resemblance of mock data with real people or account numbers is matter of sheer coincidence. The creator of this project or the genuine owners of ***PayPal*** will not be/ cannot be held responsible for loss of any kind.
-
-
+🚨 <span style="background-color: #FFFF00">**HADWIN IS FREE APP THUS REPORT AND INFORM ABOUT ANY PAID VERSION BEING DISTRIBUTED ANYWHERE**</span> 🚨. **HADWIN** has been created purely out of my own interest in building a sophisticated fund transfer platform for adding value to my portfolio. Again it is being remided that users cannot transfer/receive real money through this app (as of now), users are warned and forbidden from using real credit/debit card numbers or bank account numbers. Users may and if possible should only test this application with [mock data](./docs/HADWIN_WIKI.md) provided from my personal API hosting server (**FruitCastle** ([source code 💡]((https://github.com/brownboycodes/FruitCastle))). Account numbers and User details are fictitious, they have been generated randomly out of imagination, any resemblance of mock data with real people or account numbers is matter of sheer coincidence. The creator of this project not be/ cannot be held responsible for loss of any kind.
 
 <br>
+
+---
+
+*Anyone attempting to infringe/plagarize my code to replicate this project or reproducing this project with exactly same code and claiming it as their own is being requested to play fair, try building this project on your own, it will help in better assessment of your app development skills and also properly attribute/give credit to the people and resources from which inspiration has been drawn from.*
 
 
 
 ---
 
-*Anyone replicating this project or reproducing this project as their own is being requested to play fair and be kind ☺, try building this project on your own, it will help in better self-awareness/assessment of your app development skills and also properly attribute/give credit to the people and resources from which inspiration has been drawn from.*
+<br>
+
+[![Github Badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/brownboycodes)  [![Twitter Badge](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://www.twitter.com/brownboycodes)  [![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brownboycodes)  [![Instagram](https://img.shields.io/badge/instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/brownboycodes/)  [![Facebook Badge](https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white)](https://www.facebook.com/brownboycodes)  [![Reddit Badge](https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white)](https://www.reddit.com/user/brownboycodes/)  [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://www.youtube.com/channel/UCpu6XoixVgoQz6EUP-Ju4qA)

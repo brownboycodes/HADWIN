@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:paypal_concept/components/sign_up_screen/form_component.dart';
-import 'package:paypal_concept/screens/login_screen.dart';
+import 'package:hadwin/components/sign_up_screen/sign_up_steps.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({Key? key}) : super(key: key);
@@ -19,20 +18,21 @@ class _SignUpScreenState extends State<SignUpScreen> {
             child: Column(
               children: <Widget>[
                 SizedBox(
-                  height: 30,
+                  height: 16,
                 ),
                 Container(
-                  child: Image.asset(
-                      'assets/images/paypal-login-screen-landscape-logo.png'),
+                  child: Image.asset('assets/images/hadwin_system/hadwin-logo-with-name.png'),
                   height: 30,
                 ),
                 SizedBox(
                   height: 30,
                 ),
-                SignUpFormComponent(),
+               
+                SignUpSteps(),
                 SizedBox(
-                  height: 24,
+                  height: 27,
                 ),
+
                 Container(
                   child: Center(
                     child: InkWell(
@@ -42,22 +42,23 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             TextStyle(fontSize: 14, color: Color(0xFF929BAB)),
                       ),
                       onTap: () {
-                        // Navigator.push(context,
-                        //     MaterialPageRoute(builder: (context) => LoginScreen()));
+                      
                         Navigator.pop(context);
                       },
                     ),
                   ),
                   width: double.infinity,
-                  height: 24,
+                  height: 16,
                 ),
+                SizedBox(
+                  height: 3,
+                )
               ],
             ),
             padding: EdgeInsets.all(45),
-            reverse: true,
+         
           ),
 
-          // resizeToAvoidBottomInset: false,
         ),
         onWillPop: () => Future.value(false));
   }

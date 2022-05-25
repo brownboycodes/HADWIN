@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:paypal_concept/components/login_screen/form_component.dart';
-import 'package:paypal_concept/screens/login_help_screen.dart';
-import 'package:paypal_concept/screens/sign_up_screen.dart';
+import 'package:hadwin/components/login_screen/form_component.dart';
+import 'package:hadwin/utilities/hadwin_markdown_viewer.dart';
+
+import 'package:hadwin/screens/sign_up_screen.dart';
+
+import 'package:hadwin/utilities/slide_right_route.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -13,67 +16,76 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
+    Widget helpInfoContainer = Container(
+      child: Center(
+        child: InkWell(
+          child: Text(
+            'Having trouble logging in?',
+            style: TextStyle(fontSize: 14, color: Color(0xFF929BAB)),
+          ),
+          onTap: getLoginHelp,
+        ),
+      ),
+      width: double.infinity,
+      height: 36,
+    );
+
+    Widget signUpContainer = Container(
+      child: Center(
+        child: InkWell(
+          child: Text(
+            'Sign up',
+            style: TextStyle(fontSize: 14, color: Color(0xFF929BAB)),
+          ),
+          onTap: goToSignUpScreen,
+        ),
+      ),
+      width: double.infinity,
+      height: 36,
+    );
+    List<Widget> loginScreenContents = <Widget>[
+      _spacing(64),
+      Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 10.0),
+        child: Image.asset('assets/images/hadwin_system/hadwin-logo-with-name.png'),
+      ),
+      _spacing(64),
+      LoginFormComponent(),
+      _spacing(30),
+      helpInfoContainer,
+      _spacing(10),
+      signUpContainer
+    ];
+
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
-          children: <Widget>[
-            SizedBox(
-              height: 64,
-            ),
-            Image.asset('assets/images/paypal-login-screen-landscape-logo.png'),
-            SizedBox(
-              height: 64,
-            ),
-            LoginFormComponent(),
-            SizedBox(
-              height: 30,
-            ),
-            Container(
-              child: Center(
-                child: InkWell(
-                  child: Text(
-                    'Having trouble logging in?',
-                    style: TextStyle(fontSize: 14, color: Color(0xFF929BAB)),
-                  ),
-                  onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => LoginHelpScreen()));
-                  },
-                ),
-              ),
-              width: double.infinity,
-              height: 36,
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            Container(
-              child: Center(
-                child: InkWell(
-                  child: Text(
-                    'Sign up',
-                    style: TextStyle(fontSize: 14, color: Color(0xFF929BAB)),
-                  ),
-                  onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => SignUpScreen()));
-                  },
-                ),
-              ),
-              width: double.infinity,
-              height: 36,
-            )
-          ],
+          children: loginScreenContents,
         ),
         padding: EdgeInsets.all(45),
-        reverse: true,
+      
       ),
 
-      // resizeToAvoidBottomInset: false,
+    
     );
   }
+
+  void getLoginHelp() {
+    Navigator.push(
+        context,
+        SlideRightRoute(
+            page: HadWinMarkdownViewer(
+                screenName: 'Login Help',
+                urlRequested:
+                    'https://raw.githubusercontent.com/brownboycodes/HADWIN/master/docs/HADWIN_WIKI.md')));
+  }
+
+  void goToSignUpScreen() {
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => SignUpScreen()));
+  }
+
+  SizedBox _spacing(double height) => SizedBox(
+        height: height,
+      );
 }

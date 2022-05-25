@@ -120,6 +120,11 @@ doc/api/
 temp
 
 # work in progress files
+lib/screens/settings_screen.dart
+lib/screens/fund_transfer_screen_2.dart
+lib/screens/all_transaction_activities.dart
+lib/components/sign_up_screen/form_component.dart
 
 #local-test-data
 assets/data
+assets/images/local

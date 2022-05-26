@@ -28,31 +28,34 @@ Users are requested to rest assured as no personal data is being saved on the se
 
 <br>
 
-### Available Screens
 
-- [x] Login Screen
-- [x] User Registration Screen
-- [x] Choose Username Screen
-- [x] Default Tab Layout Screen 
-- [x] Home/Dashboard Screen 
-- [x] Contacts Screen
-- [x] Businesses & Contacts Screen
-- [x] Wallet Screen
-- [x] Add Card Screen
-- [x] Add Card Status Screen
-- [x] Fund Transfer Screen
-- [x] Transaction Status Screen
-- [x] Transaction Receipt Screen
-- [x] Settings Screen
-- [x] License Page Screen
-- [x] QR Code Screen
-- [x] QR Code Scanner Screen
-- [x] MarkDown Viewer Screen
-- [x] Error Screen
+### Screenshots
 
-<br>
-🚧 indicates Work in Progress
 
+<table>
+  <tr>
+    <td style="text-align: center; vertical-align: middle;">Login Screen</td>
+     <td style="text-align: center; vertical-align: middle;">Home Screen</td>
+     <td style="text-align: center; vertical-align: middle;">Contacts Screen</td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/Screenshot_1653483761.png" width=270 height=480></td>
+    <td><img src="screenshots/Screenshot_1653483866.png" width=270 height=480></td>
+    <td><img src="screenshots/Screenshot_1653483871.png" width=270 height=480></td>
+  </tr>
+ </table>
+ <table>
+  <tr>
+    <td style="text-align: center; vertical-align: middle;">Activities Screen</td>
+     <td style="text-align: center; vertical-align: middle;">Wallet Screen</td>
+     <td style="text-align: center; vertical-align: middle;">Fund Transfer Screen</td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/Screenshot_1653483877.png" width=270 height=480></td>
+    <td><img src="screenshots/Screenshot_1653483882.png" width=270 height=480></td>
+    <td><img src="screenshots/Screenshot_1653483904.png" width=270 height=480></td>
+  </tr>
+ </table>
 <br>
 
 <br>

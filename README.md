@@ -20,6 +20,11 @@ If users want to test the QR code scanning feature of HADWIN, they are requested
 
 Users are requested to rest assured as no personal data is being saved on the server and if they are still concerned about their privacy users are allowed to test the app with the [mock data](./docs/HADWIN_WIKI.md) only.
 
+click on the button below to checkout a working demo for android devices :  
+<a href='https://play.google.com/store/apps/details?id=com.github.brownboycodes.hadwin&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img style='width:270px;' alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a> 
+
+
+
 <br>
 
 <br>

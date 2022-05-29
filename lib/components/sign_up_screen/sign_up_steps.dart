@@ -160,7 +160,7 @@ class _SignUpStepsState extends State<SignUpSteps> {
                                             'https://raw.githubusercontent.com/brownboycodes/HADWIN/master/docs/TERMS_AND_CONDITIONS.md',
                                       ))));
                             }),
-                            TextSpan( text: 'and our ',
+                            TextSpan( text: ' and our ',
                         style:
                             TextStyle(fontSize: 14, color: Color(0xFF929BAB)),),
                             TextSpan(

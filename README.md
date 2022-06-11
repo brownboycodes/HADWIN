@@ -6,9 +6,16 @@
 
 <br>
 
-> **HADWIN** is a prototype of a fund transfer app created from UI designs discovered on Dribbble, Pinterest and Behance. **HADWIN** has been built using the [Flutter](https://flutter.dev/) framework. 
+> **HADWIN** is a prototype of a fund transfer app built with [Flutter](https://flutter.dev/). 
 
-Since this is a prototype users cannot send or receive real money, and to save costs JSON data is being used instead of data from a dedicated database, transaction and card data will be saved on the users device itself and not shared with the server. 
+<br>
+
+Watch an introductory video on HADWIN on youtube ⤵
+
+[![Introducing HADWIN](./screenshots/hadwin-devto-thumbnail-landscape-play.png)](https://www.youtube.com/watch?v=yO1KaOIC4Yw)
+
+NOTE: Since this is a prototype users cannot send or receive real money, or create real accounts, users need to login/register with test data provided here ➡️ [https://github.com/brownboycodes/HADWIN/blob/master/docs/HADWIN_WIKI.md](https://github.com/brownboycodes/HADWIN/blob/master/docs/HADWIN_WIKI.md).
+Transaction and credit card data will be saved on the users device itself and not shared with the server.
 
 <br>
 
@@ -23,9 +30,9 @@ Users are requested to rest assured as no personal data is being saved on the se
 click on the button below to checkout a working demo for android devices :  
 <a href='https://play.google.com/store/apps/details?id=com.github.brownboycodes.hadwin&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img style='width:270px;' alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a> 
 
-
-
 <br>
+
+> HADWIN is yet to be released for iOS devices, anyone releasing an iOS app with the name or user interface same-as/similar-to HADWIN will be met with legal action.
 
 <br>
 
@@ -33,9 +40,7 @@ click on the button below to checkout a working demo for android devices :
 
 <br>
 
-
 ### Screenshots
-
 
 <table>
   <tr>
@@ -81,15 +86,13 @@ click on the button below to checkout a working demo for android devices :
 
 ### ⚠ IMPORTANT ⚠
 
-🚨 <span style="background-color: #FFFF00">**HADWIN IS FREE APP THUS REPORT AND INFORM ABOUT ANY PAID VERSION BEING DISTRIBUTED ANYWHERE**</span> 🚨. **HADWIN** has been created purely out of my own interest in building a sophisticated fund transfer platform for adding value to my portfolio. Again it is being remided that users cannot transfer/receive real money through this app (as of now), users are warned and forbidden from using real credit/debit card numbers or bank account numbers. Users may and if possible should only test this application with [mock data](./docs/HADWIN_WIKI.md) provided from my personal API hosting server (**FruitCastle** ([source code 💡]((https://github.com/brownboycodes/FruitCastle))). Account numbers and User details are fictitious, they have been generated randomly out of imagination, any resemblance of mock data with real people or account numbers is matter of sheer coincidence. The creator of this project not be/ cannot be held responsible for loss of any kind.
+🚨 **USERS ARE REQUESTED TO INSTALL HADWIN FROM GOOGLE PLAY AND APP STORE (when HADWIN becomes available for iOS devices) ONLY, HADWIN IS FREE APP THUS REPORT AND INFORM ABOUT ANY PAID VERSION BEING DISTRIBUTED ANYWHERE** 🚨. **HADWIN** has been created purely out of my own interest in building a sophisticated fund transfer platform for adding value to my portfolio. Again it is being remided that users cannot transfer/receive real money through this app (as of now), users are warned and forbidden from using real credit/debit card numbers or bank account numbers. Users may and if possible should only test this application with [mock data](./docs/HADWIN_WIKI.md) provided from my personal API hosting server (**FruitCastle** ([source code 💡]((https://github.com/brownboycodes/FruitCastle))). Account numbers and User details are fictitious, they have been generated randomly out of imagination, any resemblance of mock data with real people or account numbers is matter of sheer coincidence. The creator of this project not be/ cannot be held responsible for loss of any kind.
 
 <br>
 
 ---
 
 *Anyone attempting to infringe/plagarize my code to replicate this project or reproducing this project with exactly same code and claiming it as their own is being requested to play fair, try building this project on your own, it will help in better assessment of your app development skills and also properly attribute/give credit to the people and resources from which inspiration has been drawn from.*
-
-
 
 ---
 

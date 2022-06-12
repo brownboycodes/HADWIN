@@ -2,7 +2,7 @@
 
 <!-- <img src="./assets/images/hadwin_system/hadwin-banner.png" title="" alt="HADWIN" width="789"> -->
 
-![hadwin banner](./assets/images/hadwin_system/hadwin-banner.png)
+![hadwin banner](https://github.com/brownboycodes/HADWIN/blob/master/assets/images/hadwin_system/hadwin-banner.png)
 
 <br>
 
@@ -12,7 +12,7 @@
 
 Watch an introductory video on HADWIN on youtube ⤵
 
-[![Introducing HADWIN](./screenshots/hadwin-devto-thumbnail-landscape-play.png)](https://www.youtube.com/watch?v=yO1KaOIC4Yw)
+[![Introducing HADWIN](https://github.com/brownboycodes/HADWIN/blob/master/screenshots/hadwin-devto-thumbnail-landscape-play.png)](https://www.youtube.com/watch?v=yO1KaOIC4Yw)
 
 NOTE: Since this is a prototype users cannot send or receive real money, or create real accounts, users need to login/register with test data provided here ➡️ [https://github.com/brownboycodes/HADWIN/blob/master/docs/HADWIN_WIKI.md](https://github.com/brownboycodes/HADWIN/blob/master/docs/HADWIN_WIKI.md).
 Transaction and credit card data will be saved on the users device itself and not shared with the server.
@@ -49,9 +49,9 @@ click on the button below to checkout a working demo for android devices :
      <td style="text-align: center; vertical-align: middle;">Contacts Screen</td>
   </tr>
   <tr>
-    <td><img src="screenshots/Screenshot_1653483761.png" width=270 height=480></td>
-    <td><img src="screenshots/Screenshot_1653483866.png" width=270 height=480></td>
-    <td><img src="screenshots/Screenshot_1653483871.png" width=270 height=480></td>
+    <td><img src="https://github.com/brownboycodes/HADWIN/blob/master/screenshots/Screenshot_1653483761.png" width=270 height=480></td>
+    <td><img src="https://github.com/brownboycodes/HADWIN/blob/master/screenshots/Screenshot_1653483866.png" width=270 height=480></td>
+    <td><img src="https://github.com/brownboycodes/HADWIN/blob/master/screenshots/Screenshot_1653483871.png" width=270 height=480></td>
   </tr>
  </table>
  <table>
@@ -61,9 +61,9 @@ click on the button below to checkout a working demo for android devices :
      <td style="text-align: center; vertical-align: middle;">Fund Transfer Screen</td>
   </tr>
   <tr>
-    <td><img src="screenshots/Screenshot_1653483877.png" width=270 height=480></td>
-    <td><img src="screenshots/Screenshot_1653483882.png" width=270 height=480></td>
-    <td><img src="screenshots/Screenshot_1653483904.png" width=270 height=480></td>
+    <td><img src="https://github.com/brownboycodes/HADWIN/blob/master/screenshots/Screenshot_1653483877.png" width=270 height=480></td>
+    <td><img src="https://github.com/brownboycodes/HADWIN/blob/master/screenshots/Screenshot_1653483882.png" width=270 height=480></td>
+    <td><img src="https://github.com/brownboycodes/HADWIN/blob/master/screenshots/Screenshot_1653483904.png" width=270 height=480></td>
   </tr>
  </table>
 <br>

@@ -1,0 +1,3 @@
+guidelines for contributing to this project is being reviewed and will be updated soon...
+<br>
+please wait till then

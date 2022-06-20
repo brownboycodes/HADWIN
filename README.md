@@ -6,12 +6,12 @@
 <!-- <br> -->
 
 <div align="center">
-<img alt="HADWIN logo with name" src="./assets/images/hadwin_system/hadwin-logo-with-name.png" style="max-width:48%">
+<img alt="HADWIN logo with name" src="./assets/images/hadwin_system/hadwin-logo-with-name.png" width="48%">
 <!-- <blockquote> -->
 <p>prototype of a fund transfer app built with <a href="https://flutter.dev/">Flutter</a>. </p>
 <!-- </blockquote> -->
 <br>
-  <img alt="HADWIN walkthrough as gif" src="./media/promotional/hadwin-gif-1.gif" style="max-width:75%">
+  <img alt="HADWIN walkthrough as gif" src="./media/promotional/hadwin-gif-1.gif" width="75%">
 </div>
 <br>
 
@@ -47,17 +47,19 @@ Custom system features built by me :-
 
 <br>
 
-everything else &nbsp; [![not a bug](https://forthebadge.com/images/badges/not-a-bug-a-feature.svg)](https://forthebadge.com) [![not an issue](https://forthebadge.com/images/badges/not-an-issue.svg)](https://forthebadge.com)  😜 
+<br>
+
+anything else &nbsp; [![not a bug](https://forthebadge.com/images/badges/not-a-bug-a-feature.svg)](https://forthebadge.com) [![not an issue](https://forthebadge.com/images/badges/not-an-issue.svg)](https://forthebadge.com) 🙈 
 
 ---
 
 ### WORKFLOW
 
-Given below is a flowchart which is like a brief overview of the activities that take place when the app is launched
-<!-- ![flowchart of app launch process](./media/flowcharts/app-launch-process-flowchart.png) -->
+The flowchart below provides a brief overview of the activities that take place when the app is launched
+
 <br>
 
-<p align="center"><img src="./media/flowcharts/app-launch-process-flowchart.png" alt="FruitCastle banner" style="max-width:80vw;"></p>
+<p align="center"><img src="./media/flowcharts/app-launch-process-flowchart.png" alt="FruitCastle banner" width="80%"></p>
 
 <br>
 Post successful user authentication an authorized session would last upto 2 hours.
@@ -65,7 +67,7 @@ The login process is quite sophisticated on its own and it might get too overwhe
 
 <br>
 
-<p align="center"><img src="./media/flowcharts/login-process-flowchart.png" alt="FruitCastle banner" style="max-width:80vw;"></p>
+<p align="center"><img src="./media/flowcharts/login-process-flowchart.png" alt="FruitCastle banner" width="80%"></p>
 
 <br>
 
@@ -75,7 +77,7 @@ Users are requested to rest assured as no personal data is being saved on the se
 
 <br>
 
-<p align="center"><img src="https://fruitcastle.herokuapp.com/dist/images/fruitcastle_logo_banner/fruitcastle-logo-banner-ae2012-212529-ffffff.png" alt="FruitCastle banner" style="max-width:512px;"></p>
+<p align="center"><img src="https://fruitcastle.herokuapp.com/dist/images/fruitcastle_logo_banner/fruitcastle-logo-banner-ae2012-212529-ffffff.png" alt="FruitCastle banner" width="512px"></p>
 
 [FruitCastle](https://fruitcastle.herokuapp.com/) ([source code 💡](https://github.com/brownboycodes/FruitCastle)) is a server created using [Python](https://www.python.org/) and [Flask](https://flask.palletsprojects.com/), which hosts the data being used to create simulation for authorizing access to the features to the app and making transactions.
 
@@ -83,9 +85,9 @@ Users are requested to rest assured as no personal data is being saved on the se
 
 checkout the working demo for android devices :  
 <div align="center">
-<img src="./media/promotional/3d-screenhot-tray.png" alt="FruitCastle banner" style="max-width:72vw;">
+<img src="./media/promotional/3d-screenhot-tray.png" alt="FruitCastle banner" width="72%">
 
-<a href='https://play.google.com/store/apps/details?id=com.github.brownboycodes.hadwin&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img style='width:270px;' alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+<a href='https://play.google.com/store/apps/details?id=com.github.brownboycodes.hadwin&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img width='270px' alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
 
 </div>
 
@@ -101,6 +103,7 @@ checkout the working demo for android devices :
 
 ### SAMPLE UI 📺
 
+<br>
 
 <p align="center">
 <!-- <img src="screenshots/hadwin-screenshot-with-skin-set-1.png" width=75%>
@@ -114,7 +117,11 @@ checkout the working demo for android devices :
 
 ---
 
+<br>
+
 ### QUICK START ⚡
+
+<br>
 
 1. Ensure you have flutter installed on your system (if not click [here](https://docs.flutter.dev/get-started/install)).
 
@@ -149,7 +156,39 @@ checkout the working demo for android devices :
 
 ---
 
+<br>
+
+### TASKS TO DO 📃
+
+<br>
+
+The tasks have been laid out in the format `task_type (SCOPE): the_task` and these tasks have been sorted in terms of their difficulty. Some tasks may accompany some conditions which have to be met before attempting, read and understand them carefully since a small unrectified mistake can wreck this project completely. Check the [contributing guidelines](./CONTRIBUTING.md) first.
+
+<br>
+
+#### Tasks ⤵
+
+1. feature (UIUX): in the Login process, an alert box with an error message received from the server pops up every time a user enters the wrong credentials, create a counter that would track the number of times the user enters an username or email ID that does not belong to any account on the server, if the counter hits 3 times in a row then show an [option to take the user to the sign up screen](./media/ui_designs/alert-box-to-navigate-to-sign-up-screen-design.png) in the alert box that would appear. Maintain the existing UI and experience while doing so. 🚸✨
+2. fix (UIUX): debug the Sign Up process, hopefully it can contain some flaws or maybe it can be simplified further while maintaining the existing UI and experience (hint: check the UI/UX of the sign up screen and its components for errors if any). 🚸🐛🩹
+3. refactor : use [StreamBuilder](https://api.flutter.dev/flutter/widgets/StreamBuilder-class.html) in ChooseUsernameScreen
+4. build (DEPENDENCIES): upgrade to the latest version of the flutter SDK without failing the build and crashing the app 👷‍♂️🏗⬆💥
+5. build (DEPENDENCIES): if the flutter SDK version of the project is the latest available upgrade the dependencies of the project to the latest available version without failing the build and crashing the app 👷‍♂️⬆💥
+6. build (DEPENDENCIES): if the flutter SDK version of the project is the latest available and the package [qr_code_scanner](https://pub.dev/packages/qr_code_scanner) has been discontinued, replace [qr_code_scanner](https://pub.dev/packages/qr_code_scanner) with [mobile_scanner](https://pub.dev/packages/mobile_scanner) and implement it without crashing the app. ➖📦➕
+7. feature (LOCALIZATION): make HADWIN available in other languages (japanese, hindi, bengali, mandarin, spanish, french, german etc.) 🌐
+8. test : write some meaningful tests maybe? 🧪🤔 
+    
+    <img width="300px" src="https://raw.githubusercontent.com/QAInsights/Testing-Jokes-Memes/master/memes/StressTesting-Thanos.jpeg">
+    
+    just don't break anything... please
+
+<br>
+
+---
+<br>
+
 ### DEPENDENCIES 📦
+
+<br>
 
 HADWIN uses the following dependencies:
 
@@ -213,6 +252,10 @@ HADWIN uses the following dependencies:
 <br>
 
 ---
+
+
+<br>
+
 ### CREDITS 🌟
 
   ⭐ [PayPal App Redesign Concept](https://dribbble.com/shots/14114443-PayPal-App-Redesign-Conept) by [Vadim Demenko](https://dribbble.com/vdemenko) , follow Vadim on &nbsp; [![Dribbble](https://img.shields.io/badge/Dribbble-EA4C89?style=for-the-badge&logo=dribbble&logoColor=white)](https://dribbble.com/vdemenko)  [![Behance](https://img.shields.io/badge/Behance-1769ff?style=for-the-badge&logo=behance&logoColor=white)](https://www.behance.net/vdemenko)  [![Instagram](https://img.shields.io/badge/instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/vademenko/)  [![Twitter](https://img.shields.io/badge/twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/vademenko)  [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vdemenko/)
@@ -229,7 +272,11 @@ HADWIN uses the following dependencies:
 
 ---
 
+<br>
+
 ### SUPPORT HADWIN  ❤
+
+<br>
 
 <!-- Place this tag where you want the button to render. -->
 Add a star <img height="24px" width="24px" src="https://img.icons8.com/nolan/128/star.png"/>
@@ -245,31 +292,13 @@ share on LinkedIn &nbsp; [![share on LinkedIn](https://img.shields.io/badge/Link
 Watch the introductory video on HADWIN on YouTube &nbsp; ![YouTube Video Views](https://img.shields.io/youtube/views/yO1KaOIC4Yw?style=social) ⤵
 
 <!-- [![Introducing HADWIN](./screenshots/hadwin-devto-thumbnail-landscape-play.png)](https://www.youtube.com/watch?v=yO1KaOIC4Yw) -->
-<p><a href="https://www.youtube.com/watch?v=yO1KaOIC4Yw" target="_blank"><img src="./media/promotional/hadwin-devto-thumbnail-landscape-play.png" alt="Introducing HADWIN" style="max-width:296px;"></a></p>
+<p><a href="https://www.youtube.com/watch?v=yO1KaOIC4Yw" target="_blank"><img src="./media/promotional/hadwin-devto-thumbnail-landscape-play.png" alt="Introducing HADWIN" width="296px"></a></p>
 
 <br>
 
 ---
 
-### TASKS TO DO
-
-The tasks have been laid out in the format `task_type (SCOPE): the_task` and these tasks have been sorted in terms of their difficulty. Some tasks may accompany some conditions which have to be met before attempting, read and understand them carefully since a small unrectified mistake can wreck this project completely. Check the [contributing guidelines](./CONTRIBUTING.md) first.
-
 <br>
-
-#### Tasks ⤵
-
-1. feature (UIUX): in the Login process, an alert box with an error message received from the server pops up every time a user enters the wrong credentials, create a counter that would track the number of times the user enters an username or email ID that does not belong to any account on the server, if the counter hits 3 times in a row then show an [option to take the user to the sign up screen](./media/ui_designs/alert-box-to-navigate-to-sign-up-screen-design.png) in the alert box that would appear. Maintain the existing UI and experience while doing so. 🚸✨
-2. fix (UIUX): debug the Sign Up process, hopefully it can contain some flaws or maybe it can be simplified further while maintaining the existing UI and experience (hint: check the UI/UX of the sign up screen and its components for errors if any). 🚸🐛🩹
-3. refactor : use [StreamBuilder](https://api.flutter.dev/flutter/widgets/StreamBuilder-class.html) in ChooseUsernameScreen
-4. build (DEPENDENCIES): upgrade to the latest version of the flutter SDK without failing the build and crashing the app 👷‍♂️🏗⬆💥
-5. build (DEPENDENCIES): if the flutter SDK version of the project is the latest available upgrade the dependencies of the project to the latest available version without failing the build and crashing the app 👷‍♂️⬆💥
-6. build (DEPENDENCIES): if the flutter SDK version of the project is the latest available and the package [qr_code_scanner](https://pub.dev/packages/qr_code_scanner) has been discontinued, replace [qr_code_scanner](https://pub.dev/packages/qr_code_scanner) with [mobile_scanner](https://pub.dev/packages/mobile_scanner) and implement it without crashing the app. ➖📦➕
-7. feature (LOCALIZATION): make HADWIN available in other languages (japanese, hindi, bengali, mandarin, spanish, french, german etc.) 
-
-<br>
-
----
 
 ### CONTRIBUTORS
 

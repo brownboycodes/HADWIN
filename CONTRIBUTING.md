@@ -19,9 +19,9 @@ We love your input! We want to make contributing to this project as easy and tra
 
 <br>
 
-## Any contributions you make will be under the GNU GENERAL PUBLIC LICENSE
+## Any contributions you make will be under the GNU GENERAL PUBLIC LICENSE 3.0
 
-In short, when you submit code changes, your submissions are understood to be under the same [GNU GENERAL PUBLIC LICENSE](https://www.gnu.org/licenses/gpl-3.0.en.html) that covers the project. Feel free to contact the maintainers if that's a concern.
+In short, when you submit code changes, your submissions are understood to be under the same [GNU GENERAL PUBLIC LICENSE 3.0](https://www.gnu.org/licenses/gpl-3.0.en.html) that covers the project. Feel free to contact the maintainers if that's a concern.
 
 <br>
 

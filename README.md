@@ -25,7 +25,7 @@
 ### FEATURES
 
   1. Fund Transfer - mock simulation only, a transaction request is made to the server, the server is programmed to respond with 66.666% probability of successfully executing the transaction so as to simulate real world experirence (in the future this probability can increased to 75% or more).
-  2. Scan to Pay - mock simulation only, QR Code Scanner is programmed to only recognize OR Codes of HADWIN accounts.
+  2. Scan to Pay - mock simulation only, QR Code Scanner is programmed to only recognize QR Codes of HADWIN accounts.
   3. Credit Card Validator and Storage - credit card details will be stored locally and not shared with the server, the validator is programmed to recognize cards belonging to American Express, VISA, MasterCard, Discover.
   4. Real-Time username availability checker - part of sign up process.
 
@@ -34,16 +34,15 @@ Transaction and credit card data will be saved on the users device itself and no
 
 <br>
 
-Custom system features built by me :-
+Some custom system utilities built by me :-
 
-1. User authentication and authorization system
-2. custom tab navigation stack
-3. custom keypad for fund transfer screen
-4. custom card flow widget
-5. custom transaction receipt generator
-6. error alerts
-7. search and sort systems for viewing past transactions, contacts and business organiztions
-8. local client-side databases 
+1. custom tab navigation stack
+2. custom keypad and input field for fund transfer screen
+3. custom card flow widget
+4. custom transaction receipt generator
+5. error alerts
+6. search and sort systems for filtering past transactions, contacts and business organiztions
+7. local client-side databases 
 
 <br>
 

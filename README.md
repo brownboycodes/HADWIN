@@ -22,6 +22,10 @@
 
 <br>
 
+I wanted to make this app with flutter because I was interested in flutter developer roles.  I figured out this payment interface is a fundamental and common fragment of almost every app, since almost every app requires some sort of payment/transaction interface to be present, be it a video streaming service like Netflix or Disney+ during signing up for subscription or  a social networking platform like facebook or Instagram where an user needs to add their card details for promoting their content to reach more users. I wanted to build something that would cover demonstration of a wide range of skills required for an app developer, like - knowledge of architectural components & design patterns, state management/nested state management with provider, fetching data from servers to demonstrate proficiency with restful API to connect applications to back-end services, building a real time interface, using the Camera API, writing data to local files, custom navigation stack, complex animations, seamlessly incorporating third party packages, pixel-perfect implementation of UI designs (differs only because some improvisations I made), debugging, analysis skills & performance tuning and deployment to playstore. 
+
+<br>
+
 ### FEATURES
 
   1. Fund Transfer - mock simulation only, a transaction request is made to the server, the server is programmed to respond with 66.666% probability of successfully executing the transaction so as to simulate real world experirence (in the future this probability can increased to 75% or more).
@@ -43,6 +47,29 @@ Some custom system utilities built by me :-
 5. error alerts
 6. search and sort systems for filtering past transactions, contacts and business organiztions
 7. local client-side databases 
+
+
+<br>
+
+#### Sample user data for testing the app
+
+|       NAME       |     USERNAME     |              EMAIL ID              |         PASSWORD        | BANK ACCOUNT NUMBER |
+|:----------------|:----------------:|:----------------------------------:|:-----------------------:|:-------------------:|
+| Mary Kertzmann   | mary.kertzmann   | mary.kertzmann@notillegal.org      | deer                    | 99293629            |
+| Rusty Abshire    | rusty.abshire    | rusty.abshire@unfailedstartup.io   | parrot                  | 19285107 <br /> 21664761  |
+| Dante Vandervort | dante.vandervort | dante.vandervort@junkstuff.net     | tiger                   | 67767567 <br /> 04295132  |
+| Damion Jerde     | damion.jerde     | damion.jerde@costlyhotel.com       | chicken                 | 64045463 <br /> 42203582  |
+| Bruce Wayne      | the.batman       | dark.knight@wayneenterprises.com   | aSymbol                 | 47911045 <br /> 19826115  |
+| Tony Stark       | iamironman       | tonystank@starkindustries.com      | LoveU3000               | 39753176 <br /> 61428607  |
+| Van Wilder       | freeguy          | deadpool@mcu.finally               | FirstDatesAreInterviews | 40429859 <br /> 53421343  |
+| Van Helsing      | logan            | wolverine@xmen.marvel              | ryansUglySweater        | 23926044 <br /> 20166891  |
+| Steve Harrington | king_steve       | king_steve@hawkins.high            | ussButterscotch         | 72389857 <br /> 91515917  |
+| Meilin Lee       | red.panda        | mei@turning.red                    | 4town                   | 50881774 <br /> 11045853  |
+| Diana Prince     | wonderwoman      | queen@amazon.race                  | Hippolyta               | 30646421 <br /> 39108502  |
+| Selina Kyle      | catwoman         | jewelthief@gotham.city             | notTrustworthy          | 27772507 <br /> 36995137  |
+| Natasha Romanoff | blackwidow       | natalierushman@starkindustries.com | daughterOfIvan          | 36841177 <br /> 10783270  |
+| Jane Hopper      | el               | eleven@hawkins.laboratory          | eggo                    | 76131209 <br /> 59840666  |
+
 
 <br>
 

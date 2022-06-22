@@ -11,8 +11,8 @@ We love your input! We want to make contributing to this project as easy and tra
 
 ## Use a Consistent Coding Style
 
-- file names should in `snake_case`
-- files should be name after the widget it contains, for example- if a file contains the class `UserInfo` the file name should be `user_info.dart`
+- files should be named after the widget it contains, for example- if a file contains the class `UserInfo` the file name should be `user_info.dart`
+- the preferred file naming convention is `snake_case`
 - the class names should be meaningful and should be according to the purpose it serves
 - follow clean coding principles (check out this [cheatsheet](https://gist.github.com/wojteklu/73c6914cc446146b8b533c0988cf8d29))
 

@@ -1,11 +1,11 @@
 import 'dart:convert';
 import 'dart:io';
-
+import 'package:hadwin/hadwin_components.dart';
 import 'package:http/http.dart' as http;
 
 Future<Map<String, dynamic>> getData(
     {required String urlPath, String? authKey}) async {
-  String backendServiceHost = "https://fruitcastle.herokuapp.com" + urlPath;
+  String backendServiceHost = "${ApiConstants.baseUrl}" + urlPath;
   var response;
   try {
     response = await http.get(
@@ -25,7 +25,7 @@ Future<Map<String, dynamic>> sendData(
     {required String urlPath,
     required Map<String, dynamic> data,
     String? authKey}) async {
-  String backendServiceHost = "https://fruitcastle.herokuapp.com" + urlPath;
+  String backendServiceHost = "${ApiConstants.baseUrl}" + urlPath;
   var response;
   try {
     response = await http.post(

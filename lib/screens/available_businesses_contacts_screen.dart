@@ -2,14 +2,8 @@ import 'dart:async';
 
 import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter/material.dart';
-import 'package:hadwin/components/contacts_screen/contacts_loading.dart';
-import 'package:hadwin/components/qr_code_scanner_screen/my_qr_screen.dart';
-import 'package:hadwin/providers/user_login_state_provider.dart';
-import 'package:hadwin/screens/fund_transfer_screen.dart';
-import 'package:hadwin/screens/qr_code_scanner_screen.dart';
-import 'package:hadwin/utilities/make_api_request.dart';
-import 'package:hadwin/utilities/display_error_alert.dart';
-import 'package:hadwin/utilities/slide_right_route.dart';
+import 'package:hadwin/hadwin_components.dart';
+
 import 'package:provider/provider.dart';
 
 class AvailableBusinessesAndContactsScreen extends StatefulWidget {
@@ -95,12 +89,12 @@ List<String> searchHintsList = [
         actions: [
           IconButton(
               onPressed: () {
-                Navigator.push(
-                    context,
-                    SlideRightRoute(
-                        page: widget.transactionType == 'debit'
-                            ? QRCodeScannerScreen()
-                            : MyQRCodeScreen()));
+                // Navigator.push(
+                //     context,
+                //     SlideRightRoute(
+                //         page: widget.transactionType == 'debit'
+                //             ? QRCodeScannerScreen()
+                //             : MyQRCodeScreen()));
               },
               icon: Icon(FluentIcons.qr_code_28_regular,
                   color: Color(0xff243656))),
@@ -245,7 +239,7 @@ List<String> searchHintsList = [
                                             BlendMode.saturation,
                                           ),
                                           child: Image.network(
-                                            "https://fruitcastle.herokuapp.com/dist/images/hadwin_images/brands_and_businesses/${data[index]['avatar']}",
+                                            "${ApiConstants.baseUrl}/dist/images/hadwin_images/brands_and_businesses/${data[index]['avatar']}",
                                             height: 72,
                                             width: 72,
                                             fit: BoxFit.contain,
@@ -261,7 +255,7 @@ List<String> searchHintsList = [
                                     child: AspectRatio(
                                       aspectRatio: 1.0 / 1.0,
                                       child: Image.network(
-                                        "https://fruitcastle.herokuapp.com/dist/images/hadwin_images/brands_and_businesses/${data[index]['avatar']}",
+                                        "${ApiConstants.baseUrl}/dist/images/hadwin_images/brands_and_businesses/${data[index]['avatar']}",
                                         height: 72,
                                         width: 72,
                                         fit: BoxFit.contain,

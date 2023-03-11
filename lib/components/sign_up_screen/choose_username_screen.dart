@@ -1,14 +1,11 @@
 import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:hadwin/components/main_app_screen/tabbed_layout_component.dart';
-import 'package:hadwin/database/cards_storage.dart';
 import 'package:hadwin/database/login_info_storage.dart';
-import 'package:hadwin/database/successful_transactions_storage.dart';
 import 'package:hadwin/database/user_data_storage.dart';
-import 'package:hadwin/providers/user_login_state_provider.dart';
-import 'package:hadwin/utilities/display_error_alert.dart';
 import 'package:provider/provider.dart';
 import 'package:socket_io_client/socket_io_client.dart' as IO;
+import 'package:hadwin/hadwin_components.dart';
 
 class ChooseUsername extends StatefulWidget {
   final String userAuthKey;
@@ -33,7 +30,7 @@ class _ChooseUsernameState extends State<ChooseUsername> {
 
   void connectAndListen() {
     socket = IO.io(
-        'https://fruitcastle.herokuapp.com/hadwin/v3',
+        '${ApiConstants.baseUrl}/hadwin/v3',
         IO.OptionBuilder()
             .setTransports(['websocket'])
             .disableAutoConnect()
@@ -93,7 +90,7 @@ class _ChooseUsernameState extends State<ChooseUsername> {
                   radius: 64,
                   child: ClipOval(
                 child: Image.network(
-                  "https://fruitcastle.herokuapp.com/dist/images/hadwin_images/hadwin_users/${widget.userData['gender'].toLowerCase()}/${widget.userData['avatar']}",
+                  "${ApiConstants.baseUrl}/dist/images/hadwin_images/hadwin_users/${widget.userData['gender'].toLowerCase()}/${widget.userData['avatar']}",
                   height: 120,
                   width: 120,
                   fit: BoxFit.cover,

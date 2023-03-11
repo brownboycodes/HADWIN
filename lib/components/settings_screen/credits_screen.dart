@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hadwin/components/settings_screen/credits_loading.dart';
-import 'package:hadwin/utilities/make_api_request.dart';
-import 'package:hadwin/utilities/url_external_launcher.dart';
+
+import 'package:hadwin/hadwin_components.dart';
 
 
 class CreditsScreen extends StatelessWidget {
@@ -99,7 +98,7 @@ class CreditsScreen extends StatelessWidget {
                                             maxWidth: 64.0,
                                             maxHeight: 64.0),
                                         child: Image.network(
-                                            'https://fruitcastle.herokuapp.com/dist/images/hadwin_images/attributions/${snapshot.data!['attributions'][index]['avatar']}'),
+                                            '${ApiConstants.baseUrl}/dist/images/hadwin_images/attributions/${snapshot.data!['attributions'][index]['avatar']}'),
                               
                                         shape: RoundedRectangleBorder(
                                             borderRadius: BorderRadius.all(
@@ -157,7 +156,7 @@ class CreditsScreen extends StatelessWidget {
                                                 maxWidth: 48.0,
                                                 maxHeight: 48.0),
                                             child: Image.network(
-                                                'https://fruitcastle.herokuapp.com/dist/images/brownboycodes/social_icons/${snapshot.data!['attributions'][index]['socials'][socialIndex]['avatar']}'),
+                                                '${ApiConstants.baseUrl}/dist/images/brownboycodes/social_icons/${snapshot.data!['attributions'][index]['socials'][socialIndex]['avatar']}'),
                                 
                                             shape: RoundedRectangleBorder(
                                                 borderRadius: BorderRadius.all(

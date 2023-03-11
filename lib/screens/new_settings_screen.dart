@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hadwin/components/settings_screen/app_settings.dart';
+import 'package:hadwin/hadwin_components.dart';
+
 
 
 class NewSettingsScreen extends StatelessWidget {

@@ -22,7 +22,7 @@
 
 <br>
 
-I wanted to make this app with flutter because I was interested in flutter developer roles.  I figured out this payment interface is a fundamental and common fragment of almost every app, since almost every app requires some sort of payment/transaction interface to be present, be it a video streaming service like Netflix or Disney+ during signing up for subscription or  a social networking platform like facebook or Instagram where an user needs to add their card details for promoting their content to reach more users. I wanted to build something that would cover demonstration of a wide range of skills required for an app developer, like - knowledge of architectural components & design patterns, state management/nested state management with provider, fetching data from servers to demonstrate proficiency with restful API to connect applications to back-end services, building a real time interface, using the Camera API, writing data to local files, custom navigation stack, complex animations, seamlessly incorporating third party packages, pixel-perfect implementation of UI designs (differs only because some improvisations I made), debugging, analysis skills & performance tuning and deployment to playstore. 
+I wanted to make this app with flutter because I was interested in flutter developer roles.  I figured out this payment interface is a fundamental and common fragment of almost every app, since almost every app requires some sort of payment/transaction interface to be present, be it a video streaming service like Netflix or Disney+ during signing up for subscription or  a social networking platform like facebook or Instagram where an user needs to add their card details for promoting their content to reach more users. I wanted to build something that would cover demonstration of a wide range of skills required for an app developer, like - knowledge of architectural components & design patterns, state management/nested state management with provider, fetching data from servers to demonstrate proficiency with restful API to connect applications to back-end services, building a real time interface, using the Camera API, writing data to local files, custom navigation stack, complex animations, seamlessly incorporating third party packages, pixel-perfect implementation of UI designs (differs only because some improvisations I made), debugging, analysis skills & performance tuning. 
 
 <br>
 
@@ -115,7 +115,7 @@ checkout the working demo for android devices :
 <div align="center">
 <img src="./media/promotional/3d-screenhot-tray.png" alt="FruitCastle banner" width="72%">
 
-<a href='https://play.google.com/store/apps/details?id=com.github.brownboycodes.hadwin&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img width='270px' alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+
 
 </div>
 
@@ -317,10 +317,6 @@ share on facebook &nbsp; [![share on facebook](https://img.shields.io/badge/Shar
 
 share on LinkedIn &nbsp; [![share on LinkedIn](https://img.shields.io/badge/LinkedIn-share%20with%20your%20connections-green?logo=linkedin&style=social)](https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fgithub.com%2Fbrownboycodes%2FHADWIN&title=HADWIN&summary=prototype%20of%20a%20fund%20transfer%20app%20built%20with%20flutter&source=HADWIN)
 
-Watch the introductory video on HADWIN on YouTube &nbsp; ![YouTube Video Views](https://img.shields.io/youtube/views/yO1KaOIC4Yw?style=social) ⤵
-
-<!-- [![Introducing HADWIN](./screenshots/hadwin-devto-thumbnail-landscape-play.png)](https://www.youtube.com/watch?v=yO1KaOIC4Yw) -->
-<p><a href="https://www.youtube.com/watch?v=yO1KaOIC4Yw" target="_blank"><img src="./media/promotional/hadwin-devto-thumbnail-landscape-play.png" alt="Introducing HADWIN" width="296px"></a></p>
 
 <br>
 
@@ -338,7 +334,7 @@ Watch the introductory video on HADWIN on YouTube &nbsp; ![YouTube Video Views](
 
 ### ⚠ IMPORTANT ⚠
 
-<!-- 🚨 **USERS ARE REQUESTED TO INSTALL HADWIN ONLY FROM GOOGLE PLAY AND APP STORE (when HADWIN becomes available for iOS devices), HADWIN IS A FREE APP THUS REPORT AND INFORM ABOUT ANY PAID VERSION BEING DISTRIBUTED ANYWHERE** 🚨.  -->
+
 
 **HADWIN** has been created purely out of my own interest in building a sophisticated fund transfer platform for adding value to my portfolio. Again it is being reminded that users cannot transfer/receive real money through this app (as of now), users are warned and forbidden from using real credit/debit card numbers or bank account numbers. Users may and if possible should only test this application with [mock data](./docs/HADWIN_WIKI.md) provided from my personal API hosting server (**FruitCastle** ([source code 💡]((https://github.com/brownboycodes/FruitCastle))). Account numbers and User details are fictitious, they have been generated randomly out of imagination, any resemblance of mock data with real people or account numbers is matter of sheer coincidence. The creator of this project not be/ cannot be held responsible for loss of any kind.
 
@@ -355,4 +351,4 @@ Watch the introductory video on HADWIN on YouTube &nbsp; ![YouTube Video Views](
 
 
 
-[![Github Badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/brownboycodes)  [![Twitter Badge](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://www.twitter.com/brownboycodes)  [![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brownboycodes)  [![Instagram](https://img.shields.io/badge/instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/brownboycodes/)  [![Facebook Badge](https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white)](https://www.facebook.com/brownboycodes)  [![Reddit Badge](https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white)](https://www.reddit.com/user/brownboycodes/)  [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://www.youtube.com/channel/UCpu6XoixVgoQz6EUP-Ju4qA)
+[![Github Badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/brownboycodes)  [![Twitter Badge](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://www.twitter.com/brownboycodes)  [![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brownboycodes)  [![Instagram](https://img.shields.io/badge/instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/brownboycodes/)  [![Facebook Badge](https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white)](https://www.facebook.com/brownboycodes)  [![Reddit Badge](https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white)](https://www.reddit.com/user/brownboycodes/) 

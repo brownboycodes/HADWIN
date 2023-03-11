@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hadwin/hadwin_components.dart';
 
 class LocalSplashScreenComponent extends StatelessWidget {
   const LocalSplashScreenComponent({Key? key}) : super(key: key);
@@ -11,7 +12,7 @@ class LocalSplashScreenComponent extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.asset(
-            'assets/images/hadwin_system/hadwin-splash-screen-logo.png',
+            AssetConstants.splashScreenLogo,
             height: 128.0,
           ),
         ],

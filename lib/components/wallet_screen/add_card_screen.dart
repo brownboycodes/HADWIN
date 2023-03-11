@@ -40,7 +40,7 @@ class _AddCardScreenState extends State<AddCardScreen>
   int _currentStep = 0;
   String cardBrand = "default";
   Image currentCardFrontSideImage = Image.asset(
-    'assets/images/card_flow_assets/default-frontside.png',
+    AssetConstants.defaultCardFrontSide,
     key: ValueKey(0),
   );
   late Image currentCardBackSideImage;
@@ -646,7 +646,7 @@ class _AddCardScreenState extends State<AddCardScreen>
         cardBrand = currentCardBrand;
         if (cardBrand == 'default') {
           currentCardFrontSideImage = Image.asset(
-            'assets/images/card_flow_assets/default-frontside.png',
+            AssetConstants.defaultCardFrontSide,
             key: ValueKey(1),
           );
 

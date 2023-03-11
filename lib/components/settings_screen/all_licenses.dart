@@ -29,9 +29,9 @@ class AllLicenses extends StatelessWidget {
             spacing: 6.18,
             children: [
               
-              Image.asset('assets/images/hadwin_system/hadwin-logo.png',
+              Image.asset(AssetConstants.hadwinLogo,
                   height: 48, width: 48),
-                  Image.asset('assets/images/hadwin_system/hadwin-name.png',
+                  Image.asset(AssetConstants.hadwinName,
                   height: 48),
               Text('1.0.0',style: TextStyle(color: Color(0xff243656))),
               FlutterLogo(

@@ -124,7 +124,7 @@ class AppSettingsComponent extends StatelessWidget {
         'title': Padding(
             padding: EdgeInsets.symmetric(horizontal: 48, vertical: 0),
             child: Image.asset(
-              'assets/images/hadwin_system/hadwin-logo-with-name.png',
+              AssetConstants.hadwinLogoWithName,
             )),
         'trailing': null,
         'onTap': null,

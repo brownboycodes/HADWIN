@@ -57,7 +57,7 @@ class LoginFormComponentState extends State<LoginFormComponent> {
 
   void tryLoggingIn() async {
     final dataReceived = await sendData(
-        urlPath: "/hadwin/v3/user/login",
+        urlPath: "${ApiConstants.server3}/user/login",
         data: {"userInput": userInput, "password": password});
     if (dataReceived.keys.join().toLowerCase().contains("error")) {
       showErrorAlert(context, dataReceived);

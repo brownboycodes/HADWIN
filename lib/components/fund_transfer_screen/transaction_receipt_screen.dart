@@ -2,7 +2,6 @@ import 'package:dotted_line/dotted_line.dart';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:hadwin/providers/live_transactions_provider.dart';
 
 import 'package:provider/provider.dart';
 import 'package:hadwin/hadwin_components.dart';
@@ -33,7 +32,7 @@ TextStyle _receiptHeaders =
 
     Widget transactionMemberImage = FutureBuilder<int>(
       future: checkUrlValidity(
-          "${ApiConstants.baseUrl}/dist/images/hadwin_images/brands_and_businesses/${transactionReceipt['transactionMemberAvatar']}"),
+          "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}${ApiConstants.brandsAndBusinesses}/${transactionReceipt['transactionMemberAvatar']}"),
       builder: (context, snapshot) {
         if (transactionReceipt
                 .containsKey('transactionMemberBusinessWebsite') &&
@@ -54,7 +53,7 @@ TextStyle _receiptHeaders =
               
                   ),
                   child: Image.network(
-                    "${ApiConstants.baseUrl}/dist/images/hadwin_images/brands_and_businesses/${transactionReceipt['transactionMemberAvatar']}",
+                    "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}${ApiConstants.brandsAndBusinesses}/${transactionReceipt['transactionMemberAvatar']}",
                     height: 56,
                     width: 56,
                     fit: BoxFit.contain,
@@ -71,7 +70,7 @@ TextStyle _receiptHeaders =
               child: AspectRatio(
                 aspectRatio: 1.0 / 1.0,
                 child: Image.network(
-                  "${ApiConstants.baseUrl}/dist/images/hadwin_images/hadwin_users/${transactionReceipt['transactionMemberGender'].toLowerCase()}/${transactionReceipt['transactionMemberAvatar']}",
+                  "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}/hadwin_users/${transactionReceipt['transactionMemberGender'].toLowerCase()}/${transactionReceipt['transactionMemberAvatar']}",
                   height: 56,
                   width: 56,
                   fit: BoxFit.contain,
@@ -83,7 +82,7 @@ TextStyle _receiptHeaders =
               child: AspectRatio(
                 aspectRatio: 1.0 / 1.0,
                 child: Image.network(
-                  "${ApiConstants.baseUrl}/dist/images/hadwin_images/brands_and_businesses/${transactionReceipt['transactionMemberAvatar']}",
+                  "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}${ApiConstants.brandsAndBusinesses}/${transactionReceipt['transactionMemberAvatar']}",
                   height: 56,
                   width: 56,
                   fit: BoxFit.contain,
@@ -142,7 +141,7 @@ TextStyle _receiptHeaders =
                           radius: 39,
                           child: CircleAvatar(
                             child: Image.asset(
-                              'assets/images/checkmark.png',
+                              AssetConstants.checkMark,
                              
                             ),
                             radius: 36,
@@ -455,7 +454,7 @@ TextStyle _receiptHeaders =
           Container(
             margin: EdgeInsets.only(left: 8.4),
             child: Image.network(
-              "${ApiConstants.baseUrl}/dist/images/hadwin_images/hadwin_payment_system/square_card_brands/${cardUsedInTransaction['cardBrand'].replaceAll(' ', '-').toLowerCase()}.png",
+              "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}${ApiConstants.squareCardBrands}/${cardUsedInTransaction['cardBrand'].replaceAll(' ', '-').toLowerCase()}.png",
               height: 72,
               width: 72,
             ),
@@ -493,7 +492,7 @@ TextStyle _receiptHeaders =
         direction: Axis.horizontal,
         children: [
           Image.asset(
-            'assets/images/piggy-bank.png',
+            AssetConstants.piggyBank,
             height: 48,
             width: 48,
           ),

@@ -98,7 +98,7 @@ class CreditsScreen extends StatelessWidget {
                                             maxWidth: 64.0,
                                             maxHeight: 64.0),
                                         child: Image.network(
-                                            '${ApiConstants.baseUrl}/dist/images/hadwin_images/attributions/${snapshot.data!['attributions'][index]['avatar']}'),
+                                            '${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}/attributions/${snapshot.data!['attributions'][index]['avatar']}'),
                               
                                         shape: RoundedRectangleBorder(
                                             borderRadius: BorderRadius.all(

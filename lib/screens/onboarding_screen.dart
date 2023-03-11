@@ -79,7 +79,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               "\nHADWIN is a prototype of a fund-transfer platform.\nHence, it cannot be used for making real payments or receiving real money as of now\nHADWIN was created from designs found on Dribbble, Behance & Pinterest\n\n\n\n\n\n\t(Swipe right or tap the circle below)"),
       PageData(
         mediaContent: Image.asset(
-            'assets/images/onboarding_assets/wfh-mohamed-chahin-bg-less.png'),
+            AssetConstants.onboardingAsset1),
         title:
             "still... it's a relatively well functioning app as for something built right out of a small apartment",
         bgColor: Color(0xff3385c0),
@@ -87,7 +87,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       ),
       PageData(
           mediaContent: Image.asset(
-              'assets/images/onboarding_assets/online-shopping-yuliia-osadcha-bg-less.png'),
+              AssetConstants.onboardingAsset2),
           bgColor: Color(0xff23b2f8),
           textColor: Colors.white,
           optionalWidget: getStarted),
@@ -101,7 +101,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             page: HadWinMarkdownViewer(
                 screenName: 'Docs',
                 urlRequested:
-                    'https://raw.githubusercontent.com/brownboycodes/HADWIN/master/docs/HADWIN_WIKI.md')));
+                    ApiConstants.docsWiki)));
   }
 
   void completedOrientation() async {
@@ -138,18 +138,18 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 child: Theme(
                   data: ThemeData(
                     textTheme: TextTheme(
-                      headline6: TextStyle(
+                      titleLarge: TextStyle(
                           color: page.textColor,
                           fontWeight: FontWeight.w600,
                           fontFamily: 'Helvetica',
                           letterSpacing: 0.0,
                           fontSize: 15),
-                      subtitle2: TextStyle(
+                      titleSmall: TextStyle(
                         color: page.textColor,
                         fontWeight: FontWeight.w300,
                         fontSize: 18,
                       ),
-                      bodyText2: GoogleFonts.poppins(
+                      bodyMedium: GoogleFonts.poppins(
                         color: page.textColor,
                         letterSpacing: 0.0,
                         fontSize: 15,
@@ -201,7 +201,7 @@ class PageCard extends StatelessWidget {
       ),
       child: Text(
         page.title!,
-        style: Theme.of(context).textTheme.bodyText2,
+        style: Theme.of(context).textTheme.bodyMedium,
         textAlign: TextAlign.left,
       ),
     );

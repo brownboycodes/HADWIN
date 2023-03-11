@@ -1,11 +1,9 @@
 library hadwin_components;
 
-
 //business logic
 export 'providers/user_login_state_provider.dart';
 export 'providers/live_transactions_provider.dart';
 export 'providers/tab_navigation_provider.dart';
-
 
 //components
 export 'components/wallet_screen/add_card_screen.dart';
@@ -30,7 +28,7 @@ export 'components/settings_screen/app_creator_info.dart';
 export 'components/settings_screen/credits_screen.dart';
 export 'components/add_card_screen/card_flipper.dart';
 export 'components/add_card_screen/card_processing_screen.dart';
-
+export 'components/main_app_screen/local_splash_screen_component.dart';
 
 //database
 export 'database/cards_storage.dart';
@@ -41,8 +39,7 @@ export 'database/hadwin_user_device_info_storage.dart';
 
 //resources
 export 'resources/api_constants.dart';
-
-
+export 'resources/asset_constants.dart';
 
 //screens
 export 'screens/new_settings_screen.dart';
@@ -55,6 +52,7 @@ export 'screens/all_contacts.dart';
 export 'screens/all_transaction_activities_screen.dart';
 export 'screens/home_dashboard_screen.dart';
 export 'screens/wallet_screen.dart';
+export 'screens/onboarding_screen.dart';
 
 //utilities
 export 'utilities/slide_right_route.dart';

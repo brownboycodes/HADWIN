@@ -153,7 +153,7 @@ class _FundTransferScreenState extends State<FundTransferScreen> {
                   backgroundColor: Color(0xffF5F7FA),
                   child: FutureBuilder<int>(
                     future: checkUrlValidity(
-                        "${ApiConstants.baseUrl}/dist/images/hadwin_images/brands_and_businesses/${widget.otherParty['avatar']}"),
+                        "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}${ApiConstants.brandsAndBusinesses}/${widget.otherParty['avatar']}"),
                     builder: (context, snapshot) {
                       Widget contactImage;
                       if (widget.otherParty.containsKey('emailAddress') &&
@@ -164,7 +164,7 @@ class _FundTransferScreenState extends State<FundTransferScreen> {
                             child: AspectRatio(
                               aspectRatio: 1.0 / 1.0,
                               child: Image.network(
-                                "${ApiConstants.baseUrl}/dist/images/hadwin_images/hadwin_users/${widget.otherParty['gender'].toLowerCase()}/${widget.otherParty['avatar']}",
+                                "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}/hadwin_users/${widget.otherParty['gender'].toLowerCase()}/${widget.otherParty['avatar']}",
                                 height: 72,
                                 width: 72,
                                 fit: BoxFit.contain,
@@ -176,7 +176,7 @@ class _FundTransferScreenState extends State<FundTransferScreen> {
                             child: AspectRatio(
                               aspectRatio: 1.0 / 1.0,
                               child: Image.network(
-                                "${ApiConstants.baseUrl}/dist/images/hadwin_images/brands_and_businesses/${widget.otherParty['avatar']}",
+                                "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}${ApiConstants.brandsAndBusinesses}/${widget.otherParty['avatar']}",
                                 height: 72,
                                 width: 72,
                                 fit: BoxFit.contain,
@@ -200,7 +200,7 @@ class _FundTransferScreenState extends State<FundTransferScreen> {
                                   BlendMode.saturation,
                                 ),
                                 child: Image.network(
-                                  "${ApiConstants.baseUrl}/dist/images/hadwin_images/brands_and_businesses/${widget.otherParty['avatar']}",
+                                  "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}${ApiConstants.brandsAndBusinesses}/${widget.otherParty['avatar']}",
                                   height: 72,
                                   width: 72,
                                   fit: BoxFit.contain,

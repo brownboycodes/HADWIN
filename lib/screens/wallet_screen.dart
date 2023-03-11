@@ -39,7 +39,7 @@ class _WalletScreenState extends State<WalletScreen> {
                   child: Opacity(
                     opacity: 0.16,
                     child: Image.asset(
-                      "assets/images/hadwin_system/magicpattern-blob-1652765120695.png",
+                      AssetConstants.magicPatternBlob,
                       color: Colors.white,
                       height: 480,
                     ),
@@ -57,7 +57,7 @@ class _WalletScreenState extends State<WalletScreen> {
               radius: 64,
               child: ClipOval(
                 child: Image.network(
-                  "${ApiConstants.baseUrl}/dist/images/hadwin_images/hadwin_users/${widget.user['gender'].toLowerCase()}/${widget.user['avatar']}",
+                  "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}/hadwin_users/${widget.user['gender'].toLowerCase()}/${widget.user['avatar']}",
                   height: 120,
                   width: 120,
                   fit: BoxFit.cover,
@@ -276,7 +276,7 @@ class _WalletScreenState extends State<WalletScreen> {
                     child: Container(
                         color: Colors.white,
                         child: Image.network(
-                          "${ApiConstants.baseUrl}/dist/images/hadwin_images/hadwin_payment_system/square_card_brands/${cardData[index]['cardBrand'].replaceAll(' ', '-').toLowerCase()}.png",
+                          "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}${ApiConstants.squareCardBrands}/${cardData[index]['cardBrand'].replaceAll(' ', '-').toLowerCase()}.png",
                           width: 48,
                           height: 48,
                         )),

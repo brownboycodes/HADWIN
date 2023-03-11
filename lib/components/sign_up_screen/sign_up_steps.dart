@@ -434,7 +434,7 @@ class _SignUpStepsState extends State<SignUpSteps> {
   }
 
   void _tryRegistering() {
-    sendData(urlPath: '/hadwin/v1/user/register', data: signUpDetails)
+    sendData(urlPath: '${ApiConstants.server1}/user/register', data: signUpDetails)
         .then((response) {
       ScaffoldMessenger.of(context).hideCurrentSnackBar();
 

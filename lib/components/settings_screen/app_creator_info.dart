@@ -73,7 +73,7 @@ class AppCreatorInfoScreen extends StatelessWidget {
                                 child: AspectRatio(
                                   aspectRatio: 1.0 / 1.0,
                                   child: Image.network(
-                                    '${ApiConstants.baseUrl}/dist/images/hadwin_images/attributions/${snapshot.data!['avatar']}',
+                                    '${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}/attributions/${snapshot.data!['avatar']}',
                                     height: 120,
                                     width: 120,
                                     fit: BoxFit.contain,

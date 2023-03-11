@@ -43,7 +43,7 @@ class _LoginScreenState extends State<LoginScreen> {
       _spacing(64),
       Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10.0),
-        child: Image.asset('assets/images/hadwin_system/hadwin-logo-with-name.png'),
+        child: Image.asset(AssetConstants.hadwinLogoWithName),
       ),
       _spacing(64),
       LoginFormComponent(),

@@ -33,7 +33,7 @@ class CardsStorage {
       } else {
         try {
           Map<String, dynamic> availableCards = await getData(
-              urlPath: "/hadwin/v1/available-cards", authKey: userAuthKey);
+              urlPath: "${ApiConstants.server1}/available-cards", authKey: userAuthKey);
           if (availableCards.keys.join().toLowerCase().contains("error")) {
             return false;
           } else {

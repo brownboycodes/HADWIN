@@ -27,7 +27,7 @@ class _ChooseUsernameState extends State<ChooseUsername> {
 
   void connectAndListen() {
     socket = IO.io(
-        '${ApiConstants.baseUrl}/hadwin/v3',
+        '${ApiConstants.baseUrl}${ApiConstants.server3}',
         IO.OptionBuilder()
             .setTransports(['websocket'])
             .disableAutoConnect()
@@ -87,7 +87,7 @@ class _ChooseUsernameState extends State<ChooseUsername> {
                   radius: 64,
                   child: ClipOval(
                 child: Image.network(
-                  "${ApiConstants.baseUrl}/dist/images/hadwin_images/hadwin_users/${widget.userData['gender'].toLowerCase()}/${widget.userData['avatar']}",
+                  "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}/hadwin_users/${widget.userData['gender'].toLowerCase()}/${widget.userData['avatar']}",
                   height: 120,
                   width: 120,
                   fit: BoxFit.cover,

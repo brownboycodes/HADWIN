@@ -1,7 +1,5 @@
 import 'dart:convert';
-
 import 'dart:io';
-
 import 'package:path_provider/path_provider.dart';
 
 class SuccessfulTransactionsStorage {
@@ -92,7 +90,7 @@ class SuccessfulTransactionsStorage {
         return true;
       });
     } catch (e) {
-      //* //* RESET TRANSACTIONS FILE UNSUCCESSFUL
+      //* RESET TRANSACTIONS FILE UNSUCCESSFUL
       return false;
     }
   }

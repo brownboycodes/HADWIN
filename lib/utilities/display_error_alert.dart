@@ -100,13 +100,13 @@ class _LocalError {
                   colorFilter:
                       ColorFilter.mode(Colors.grey, BlendMode.saturation),
                   child: Image.asset(
-                    'assets/images/notification_assets/no-wifi.png',
+                    AssetConstants.noWifi,
                     height: 48,
                     width: 48,
                   ),
                 ))
             : Image.asset(
-                'assets/images/notification_assets/file-error.png',
+                AssetConstants.fileError,
                 height: 48,
                 width: 48,
               ),

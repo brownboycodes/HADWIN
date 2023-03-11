@@ -107,7 +107,7 @@ class _TransactionProcessingScreenState
         Provider.of<UserLoginStateProvider>(context, listen: false)
             .userLoginAuthKey;
     responseForTransaction = await sendData(
-        urlPath: "/hadwin/v2/execute-transaction",
+        urlPath: "${ApiConstants.server2}/execute-transaction",
         data: {
           'transactionReceipt': widget.transactionReceipt,
         },

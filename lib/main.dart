@@ -3,21 +3,9 @@ import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 
-import 'package:hadwin/components/main_app_screen/local_splash_screen_component.dart';
+import 'package:hadwin/hadwin_components.dart';
 
-import 'package:hadwin/components/main_app_screen/tabbed_layout_component.dart';
-import 'package:hadwin/database/cards_storage.dart';
-import 'package:hadwin/database/login_info_storage.dart';
-import 'package:hadwin/database/hadwin_user_device_info_storage.dart';
-import 'package:hadwin/database/successful_transactions_storage.dart';
-import 'package:hadwin/database/user_data_storage.dart';
-import 'package:hadwin/providers/live_transactions_provider.dart';
-import 'package:hadwin/providers/tab_navigation_provider.dart';
 
-import 'package:hadwin/providers/user_login_state_provider.dart';
-import 'package:hadwin/screens/login_screen.dart';
-import 'package:hadwin/utilities/make_api_request.dart';
-import 'package:hadwin/screens/onboarding_screen.dart';
 
 import 'package:provider/provider.dart';
 
@@ -146,7 +134,7 @@ class _MyAppState extends State<MyApp> {
 
   Future<bool> fetchUserId(String authKey, String userId) async {
     final dataReceived =
-        await getData(urlPath: "/hadwin/v3/user/$userId", authKey: authKey);
+        await getData(urlPath: "${ApiConstants.server3}/user/$userId", authKey: authKey);
     if (dataReceived.keys.join().toLowerCase().contains("error")) {
       return false;
     } else {

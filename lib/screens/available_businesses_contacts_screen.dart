@@ -133,10 +133,10 @@ List<String> searchHintsList = [
               child: FutureBuilder<List<dynamic>>(
                 future: Future.wait([
                   getData(
-                      urlPath: "/hadwin/v2/businesses-and-brands",
+                      urlPath: "${ApiConstants.server2}/businesses-and-brands",
                       authKey: userAuthKey),
                   getData(
-                      urlPath: "/hadwin/v3/all-contacts", authKey: userAuthKey)
+                      urlPath: "${ApiConstants.server3}/all-contacts", authKey: userAuthKey)
                 ]),
                 builder: (context, snapshot) {
                   List<Widget> children;
@@ -239,7 +239,7 @@ List<String> searchHintsList = [
                                             BlendMode.saturation,
                                           ),
                                           child: Image.network(
-                                            "${ApiConstants.baseUrl}/dist/images/hadwin_images/brands_and_businesses/${data[index]['avatar']}",
+                                            "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}${ApiConstants.brandsAndBusinesses}/${data[index]['avatar']}",
                                             height: 72,
                                             width: 72,
                                             fit: BoxFit.contain,
@@ -255,7 +255,7 @@ List<String> searchHintsList = [
                                     child: AspectRatio(
                                       aspectRatio: 1.0 / 1.0,
                                       child: Image.network(
-                                        "${ApiConstants.baseUrl}/dist/images/hadwin_images/brands_and_businesses/${data[index]['avatar']}",
+                                        "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}${ApiConstants.brandsAndBusinesses}/${data[index]['avatar']}",
                                         height: 72,
                                         width: 72,
                                         fit: BoxFit.contain,

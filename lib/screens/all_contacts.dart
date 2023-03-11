@@ -112,7 +112,7 @@ class _AllContactsScreenState extends State<AllContactsScreen> {
                 width: double.infinity,
                 child: FutureBuilder<Map<String, dynamic>>(
                     future: getData(
-                        urlPath: "/hadwin/v3/all-contacts",
+                        urlPath: "${ApiConstants.server3}/all-contacts",
                         authKey: widget.userAuthKey),
                     builder: buildContacts),
               ),
@@ -285,7 +285,7 @@ class _AllContactsScreenState extends State<AllContactsScreen> {
                       child: AspectRatio(
                         aspectRatio: 1.0 / 1.0,
                         child: Image.network(
-                          "${ApiConstants.baseUrl}/dist/images/hadwin_images/brands_and_businesses/${data[index]['avatar']}",
+                          "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}${ApiConstants.brandsAndBusinesses}/${data[index]['avatar']}",
                           height: 68,
                           width: 68,
                           fit: BoxFit.contain,

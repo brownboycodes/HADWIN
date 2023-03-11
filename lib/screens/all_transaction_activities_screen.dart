@@ -60,7 +60,7 @@ class AllTransactionActivitiesState extends State<AllTransactionActivities> {
   void getTransactionsFromApi() async {
     final response = await Future.wait([
       getData(
-          urlPath: "/hadwin/v1/all-transactions", authKey: widget.userAuthKey),
+          urlPath: "${ApiConstants.server1}/all-transactions", authKey: widget.userAuthKey),
       SuccessfulTransactionsStorage().getSuccessfulTransactions()
     ]);
 
@@ -315,7 +315,7 @@ class AllTransactionActivitiesState extends State<AllTransactionActivities> {
                       itemBuilder: (context, transaction) {
                         Widget transactionMemberImage = FutureBuilder<int>(
                           future: checkUrlValidity(
-                              "${ApiConstants.baseUrl}/dist/images/hadwin_images/brands_and_businesses/${transaction['transactionMemberAvatar']}"),
+                              "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}${ApiConstants.brandsAndBusinesses}/${transaction['transactionMemberAvatar']}"),
                           builder: (context, snapshot) {
                             if (transaction.containsKey(
                                     'transactionMemberBusinessWebsite') &&
@@ -336,7 +336,7 @@ class AllTransactionActivitiesState extends State<AllTransactionActivities> {
                                         BlendMode.saturation,
                                       ),
                                       child: Image.network(
-                                        "${ApiConstants.baseUrl}/dist/images/hadwin_images/brands_and_businesses/${transaction['transactionMemberAvatar']}",
+                                        "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}${ApiConstants.brandsAndBusinesses}/${transaction['transactionMemberAvatar']}",
                                         height: 72,
                                         width: 72,
                                         fit: BoxFit.contain,
@@ -355,7 +355,7 @@ class AllTransactionActivitiesState extends State<AllTransactionActivities> {
                                   child: AspectRatio(
                                     aspectRatio: 1.0 / 1.0,
                                     child: Image.network(
-                                      "${ApiConstants.baseUrl}/dist/images/hadwin_images/hadwin_users/${transaction['transactionMemberGender'].toLowerCase()}/${transaction['transactionMemberAvatar']}",
+                                      "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}/hadwin_users/${transaction['transactionMemberGender'].toLowerCase()}/${transaction['transactionMemberAvatar']}",
                                       height: 72,
                                       width: 72,
                                       fit: BoxFit.contain,
@@ -367,7 +367,7 @@ class AllTransactionActivitiesState extends State<AllTransactionActivities> {
                                   child: AspectRatio(
                                     aspectRatio: 1.0 / 1.0,
                                     child: Image.network(
-                                      "${ApiConstants.baseUrl}/dist/images/hadwin_images/brands_and_businesses/${transaction['transactionMemberAvatar']}",
+                                      "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}${ApiConstants.brandsAndBusinesses}/${transaction['transactionMemberAvatar']}",
                                       height: 72,
                                       width: 72,
                                       fit: BoxFit.contain,

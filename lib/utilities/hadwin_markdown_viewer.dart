@@ -118,7 +118,7 @@ class HadWinMarkdownViewerState extends State<HadWinMarkdownViewer> {
                                         fontStyle: FontStyle.italic)),
                                 codeConfig: CodeConfig(
                                     
-                                    padding: EdgeInsets.all(1.618),
+                                    // padding: EdgeInsets.all(1.618),
                                     codeStyle: GoogleFonts.spaceMono(
                                         backgroundColor: Color(0xff4a4e69),
                                         fontWeight: FontWeight.w600,

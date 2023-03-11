@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hadwin/database/login_info_storage.dart';
-import 'package:hadwin/database/user_data_storage.dart';
+import 'package:hadwin/hadwin_components.dart';
 
-import 'package:hadwin/screens/login_screen.dart';
+
 
 Future<bool> _deleteLoggedInUserData() async {
   List<bool> deletionStatus = await Future.wait(

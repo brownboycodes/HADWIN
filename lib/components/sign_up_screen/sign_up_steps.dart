@@ -1,15 +1,7 @@
 import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:hadwin/components/sign_up_screen/choose_username_screen.dart';
-import 'package:hadwin/components/sign_up_screen/step_get_bank_account.dart';
-import 'package:hadwin/components/sign_up_screen/step_get_email_password.dart';
-import 'package:hadwin/components/sign_up_screen/step_get_name_address.dart';
-import 'package:hadwin/utilities/hadwin_markdown_viewer.dart';
-
-import 'package:hadwin/utilities/make_api_request.dart';
-import 'package:hadwin/utilities/display_error_alert.dart';
-import 'package:hadwin/utilities/slide_right_route.dart';
+import 'package:hadwin/hadwin_components.dart';
 
 class SignUpSteps extends StatefulWidget {
   const SignUpSteps({Key? key}) : super(key: key);

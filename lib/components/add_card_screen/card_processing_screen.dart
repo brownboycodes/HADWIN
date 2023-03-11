@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
-import 'package:hadwin/database/cards_storage.dart';
+import 'package:hadwin/hadwin_components.dart';
 
 class CardProcessingScreen extends StatefulWidget {
   const CardProcessingScreen({Key? key, required this.cardDetails})

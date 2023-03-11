@@ -1,9 +1,6 @@
 import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:grouped_list/grouped_list.dart';
-
-import 'package:hadwin/components/fund_transfer_screen/transaction_receipt_screen.dart';
-
 import 'package:provider/provider.dart';
 import 'package:hadwin/hadwin_components.dart';
 

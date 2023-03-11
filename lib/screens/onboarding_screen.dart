@@ -2,10 +2,9 @@ import 'package:concentric_transition/concentric_transition.dart';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:hadwin/database/hadwin_user_device_info_storage.dart';
-import 'package:hadwin/screens/login_screen.dart';
-import 'package:hadwin/utilities/hadwin_markdown_viewer.dart';
-import 'package:hadwin/utilities/slide_right_route.dart';
+
+
+import 'package:hadwin/hadwin_components.dart';
 
 class PageData {
   final String? title;

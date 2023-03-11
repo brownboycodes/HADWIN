@@ -2,8 +2,6 @@ import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'package:hadwin/components/fund_transfer_screen/transaction_processing_screen.dart';
-import 'package:hadwin/database/user_data_storage.dart';
 import 'package:hadwin/hadwin_components.dart';
 
 

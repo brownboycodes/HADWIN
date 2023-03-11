@@ -4,21 +4,8 @@ import 'dart:math';
 import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-
-import 'package:hadwin/providers/live_transactions_provider.dart';
-import 'package:hadwin/providers/tab_navigation_provider.dart';
-
-import 'package:hadwin/providers/user_login_state_provider.dart';
-
-import 'package:hadwin/screens/all_contacts.dart';
-import 'package:hadwin/screens/all_transaction_activities_screen.dart';
-
-import 'package:hadwin/screens/home_dashboard_screen.dart';
-
-import 'package:hadwin/screens/wallet_screen.dart';
-import 'package:hadwin/utilities/hadwin_icons.dart';
-
 import 'package:provider/provider.dart';
+import 'package:hadwin/hadwin_components.dart';
 
 class TabbedLayoutComponent extends StatefulWidget {
   final Map<String, dynamic> userData;
@@ -30,7 +17,6 @@ class TabbedLayoutComponent extends StatefulWidget {
 }
 
 class _TabbedLayoutComponentState extends State<TabbedLayoutComponent> {
-
   Timer? _updateTransactionsTimer;
   int _currentTab = 0;
   int totalTransactionRequests = 0;
@@ -49,9 +35,7 @@ class _TabbedLayoutComponentState extends State<TabbedLayoutComponent> {
         Duration(minutes: [1, 2, 3, 4][Random().nextInt(4)]), (Timer t) {
       Provider.of<LiveTransactionsProvider>(context, listen: false)
           .updateTransactionRequests();
-     
     });
-  
   }
 
   @override
@@ -97,9 +81,8 @@ class _TabbedLayoutComponentState extends State<TabbedLayoutComponent> {
     return WillPopScope(
       onWillPop: _onBackPress,
       child: Scaffold(
-     
         // backgroundColor: Colors.white,
-         backgroundColor: Color(0xfffefefe),
+        backgroundColor: Color(0xfffefefe),
 
         extendBodyBehindAppBar: true,
 
@@ -127,7 +110,6 @@ class _TabbedLayoutComponentState extends State<TabbedLayoutComponent> {
     }
 
     return Container(
-    
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 6.18, vertical: 1),
         child: GNav(
@@ -168,11 +150,9 @@ class _TabbedLayoutComponentState extends State<TabbedLayoutComponent> {
                       right: 0,
                       child: ClipOval(
                         child: Container(
-                          
                             color: Color(0xffffb3c1),
                             width: 17,
                             height: 17,
-                         
                             child: Center(
                               child: Text(unreadTransactions.toString(),
                                   textAlign: TextAlign.center,
@@ -180,7 +160,6 @@ class _TabbedLayoutComponentState extends State<TabbedLayoutComponent> {
                                       fontSize: 9.6,
                                       fontWeight: FontWeight.bold,
                                       color: Color(0xffc9184a),
-                               
                                       backgroundColor: Color(0xffffb3c1))),
                             )),
                       ),
@@ -190,9 +169,7 @@ class _TabbedLayoutComponentState extends State<TabbedLayoutComponent> {
             ),
             GButton(
               icon: HadWinIcons.line_awesome_wallet_solid,
-            
               text: 'Wallet',
-            
               iconSize: 34,
             ),
           ],
@@ -200,7 +177,6 @@ class _TabbedLayoutComponentState extends State<TabbedLayoutComponent> {
           onTabChange: _onTabChange,
         ),
       ),
-     
     );
   }
 

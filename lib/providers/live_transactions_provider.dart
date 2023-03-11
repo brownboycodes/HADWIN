@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hadwin/database/successful_transactions_storage.dart';
-import 'package:hadwin/providers/user_login_state_provider.dart';
-
+import 'package:hadwin/hadwin_components.dart';
 class LiveTransactionsProvider with ChangeNotifier {
   late UserLoginStateProvider _userLoginStateProvider;
 

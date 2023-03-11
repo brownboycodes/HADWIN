@@ -3,7 +3,7 @@ import 'dart:io';
 import 'dart:math';
 
 import 'package:path_provider/path_provider.dart';
-import 'package:hadwin/utilities/make_api_request.dart';
+import 'package:hadwin/hadwin_components.dart';
 
 class CardsStorage {
   Future<String> get _localPath async {

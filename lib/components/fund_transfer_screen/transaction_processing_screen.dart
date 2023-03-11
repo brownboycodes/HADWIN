@@ -1,14 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
-
-import 'package:hadwin/components/fund_transfer_screen/transaction_receipt_screen.dart';
-import 'package:hadwin/providers/live_transactions_provider.dart';
-import 'package:hadwin/providers/user_login_state_provider.dart';
-import 'package:hadwin/utilities/make_api_request.dart';
-import 'package:hadwin/utilities/display_error_alert.dart';
-import 'package:hadwin/utilities/slide_right_route.dart';
 import 'package:provider/provider.dart';
+import 'package:hadwin/hadwin_components.dart';
 
 class TransactionProcessingScreen extends StatefulWidget {
   final Map<String, dynamic> transactionReceipt;

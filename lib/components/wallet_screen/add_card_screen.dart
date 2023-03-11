@@ -2,12 +2,9 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:hadwin/components/add_card_screen/card_flipper.dart';
-import 'package:hadwin/components/add_card_screen/card_processing_screen.dart';
-
-import 'package:hadwin/utilities/card_identifier.dart';
-import 'package:hadwin/utilities/slide_right_route.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
+import 'package:hadwin/hadwin_components.dart';
+
 
 class AddCardScreen extends StatefulWidget {
   const AddCardScreen({

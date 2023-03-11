@@ -1,9 +1,7 @@
 import 'package:fade_shimmer/fade_shimmer.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-
-import 'package:hadwin/components/settings_screen/license_data.dart';
-import 'package:hadwin/utilities/slide_right_route.dart';
+import 'package:hadwin/hadwin_components.dart';
 
 class AllLicenses extends StatelessWidget {
   const AllLicenses({

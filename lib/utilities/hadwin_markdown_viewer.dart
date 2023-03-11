@@ -8,9 +8,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:http/http.dart' as http;
 
 import 'package:markdown_widget/markdown_widget.dart';
+import 'package:hadwin/hadwin_components.dart';
 
-import 'package:hadwin/utilities/display_error_alert.dart';
-import 'package:hadwin/utilities/url_external_launcher.dart';
 
 class HadWinMarkdownViewer extends StatefulWidget {
   final String screenName;

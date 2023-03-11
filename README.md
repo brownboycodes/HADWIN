@@ -29,9 +29,11 @@ I wanted to make this app with flutter because I was interested in flutter devel
 ### FEATURES
 
   1. Fund Transfer - mock simulation only, a transaction request is made to the server, the server is programmed to respond with 66.666% probability of successfully executing the transaction so as to simulate real world experirence (in the future this probability can increased to 75% or more).
-  2. Scan to Pay - mock simulation only, QR Code Scanner is programmed to only recognize QR Codes of HADWIN accounts.
-  3. Credit Card Validator and Storage - credit card details will be stored locally and not shared with the server, the validator is programmed to recognize cards belonging to American Express, VISA, MasterCard, Discover.
-  4. Real-Time username availability checker - part of sign up process.
+  
+  <!-- 2. Scan to Pay - mock simulation only, QR Code Scanner is programmed to only recognize QR Codes of HADWIN accounts. -->
+
+  2. Credit Card Validator and Storage - credit card details will be stored locally and not shared with the server, the validator is programmed to recognize cards belonging to American Express, VISA, MasterCard, Discover.
+  3. Real-Time username availability checker - part of sign up process.
 
 NOTE: Since this is a prototype users cannot send or receive real money, or create real accounts, users need to login/register with test data provided here ➡️ [https://github.com/brownboycodes/HADWIN/blob/master/docs/HADWIN_WIKI.md](https://github.com/brownboycodes/HADWIN/blob/master/docs/HADWIN_WIKI.md).
 Transaction and credit card data will be saved on the users device itself and not shared with the server.
@@ -97,15 +99,15 @@ The login process is quite sophisticated on its own and it might get too overwhe
 
 <br>
 
-If users want to test the QR code scanning feature of HADWIN, they are requested to go to [https://fruitcastle.herokuapp.com/hadwin/v2/qr-code-interpretter/random](https://fruitcastle.herokuapp.com/hadwin/v2/qr-code-interpretter/random) to obtain a random QR code image.
+<!-- If users want to test the QR code scanning feature of HADWIN, they are requested to go to [https://fruitcastle.onrender.com/hadwin/v2/qr-code-interpretter/random](https://fruitcastle.onrender.com/hadwin/v2/qr-code-interpretter/random) to obtain a random QR code image. -->
 
 Users are requested to rest assured as no personal data is being saved on the server and if they are still concerned about their privacy users are allowed to test the app with the [mock data](./docs/HADWIN_WIKI.md) only.
 
 <br>
 
-<p align="center"><img src="https://fruitcastle.herokuapp.com/dist/images/fruitcastle_logo_banner/fruitcastle-logo-banner-ae2012-212529-ffffff.png" alt="FruitCastle banner" width="512px"></p>
+<p align="center"><img src="https://fruitcastle.onrender.com/dist/images/fruitcastle_logo_banner/fruitcastle-logo-banner-ae2012-212529-ffffff.png" alt="FruitCastle banner" width="512px"></p>
 
-[FruitCastle](https://fruitcastle.herokuapp.com/) ([source code 💡](https://github.com/brownboycodes/FruitCastle)) is a server created using [Python](https://www.python.org/) and [Flask](https://flask.palletsprojects.com/), which hosts the data being used to create simulation for authorizing access to the features to the app and making transactions.
+[FruitCastle](https://fruitcastle.onrender.com/) ([source code 💡](https://github.com/brownboycodes/FruitCastle)) is a server created using [Python](https://www.python.org/) and [Flask](https://flask.palletsprojects.com/), which hosts the data being used to create simulation for authorizing access to the features to the app and making transactions.
 
 
 
@@ -222,7 +224,7 @@ HADWIN uses the following dependencies:
   1. [fluentui_system_icons](https://pub.dev/packages/fluentui_system_icons) (📌1.1.153): Fluent UI System Icons are a collection of familiar, friendly and modern icons from Microsoft. 🎨
   1. [http](https://pub.dev/packages/http) (📌0.13.4): A composable, multi-platform, Future-based API for HTTP requests. ⚡
   1. [fade_shimmer](https://pub.dev/packages/fade_shimmer) (📌2.0.1): A fade shimmer library to implement loading like lastest facebook loading effect. 🎨
-  1. [qr_code_scanner](https://pub.dev/packages/qr_code_scanner) (📌0.6.1): QR code scanner that can be embedded inside flutter. It uses zxing in Android and MTBBarcode scanner in iOS. ✨
+  <!-- 1. [qr_code_scanner](https://pub.dev/packages/qr_code_scanner) (📌0.6.1): QR code scanner that can be embedded inside flutter. It uses zxing in Android and MTBBarcode scanner in iOS. ✨ -->
   1. [scrollable_positioned_list](https://pub.dev/packages/scrollable_positioned_list) (📌0.2.3): A list with helper methods to programmatically scroll to an item. ⚡
   1. [google_fonts](https://pub.dev/packages/google_fonts) (📌2.3.1): A Flutter package to use fonts from fonts.google.com. 🎨
   1. [lottie](https://pub.dev/packages/lottie) (📌1.2.2): Render After Effects animations natively on Flutter. This package is a pure Dart implementation of a Lottie player. 🎨
@@ -230,7 +232,7 @@ HADWIN uses the following dependencies:
   1. [grouped_list](https://pub.dev/packages/grouped_list) (📌4.2.0): A Flutter ListView where the list items can be grouped into sections. ⚡
   1. [concentric_transition](https://pub.dev/packages/concentric_transition) (📌1.0.1): Concentric Transition effect. Useful for onboarding, page transitions etc. 🎨
   1. [dotted_line](https://pub.dev/packages/dotted_line) (📌3.1.0): This package allows you to draw dotted lines with Flutter. You can draw a beautiful dotted line. 🎨
-  1. [qr_flutter](https://pub.dev/packages/qr_flutter) (📌4.0.0): QR.Flutter is a Flutter library for simple and fast QR code rendering via a Widget or custom painter. ✨🎨
+  <!-- 1. [qr_flutter](https://pub.dev/packages/qr_flutter) (📌4.0.0): QR.Flutter is a Flutter library for simple and fast QR code rendering via a Widget or custom painter. ✨🎨 -->
   1. [url_launcher](https://pub.dev/packages/url_launcher) (📌6.0.20): Flutter plugin for launching a URL. Supports web, phone, SMS, and email schemes. ✨
   1. [google_nav_bar](https://pub.dev/packages/google_nav_bar) (📌5.0.6): A modern google style nav bar which could be use as a bottom navigation bar or tabbar, the design strictly follows the cuberto UI/UX on dribbble. 🎨⚡✨
   1. [path_provider](https://pub.dev/packages/path_provider) (📌2.0.9): Flutter plugin for getting commonly used locations on host platform file systems, such as the temp and app data directories. ⚡
@@ -336,7 +338,10 @@ Watch the introductory video on HADWIN on YouTube &nbsp; ![YouTube Video Views](
 
 ### ⚠ IMPORTANT ⚠
 
-🚨 **USERS ARE REQUESTED TO INSTALL HADWIN ONLY FROM GOOGLE PLAY AND APP STORE (when HADWIN becomes available for iOS devices), HADWIN IS A FREE APP THUS REPORT AND INFORM ABOUT ANY PAID VERSION BEING DISTRIBUTED ANYWHERE** 🚨. **HADWIN** has been created purely out of my own interest in building a sophisticated fund transfer platform for adding value to my portfolio. Again it is being remided that users cannot transfer/receive real money through this app (as of now), users are warned and forbidden from using real credit/debit card numbers or bank account numbers. Users may and if possible should only test this application with [mock data](./docs/HADWIN_WIKI.md) provided from my personal API hosting server (**FruitCastle** ([source code 💡]((https://github.com/brownboycodes/FruitCastle))). Account numbers and User details are fictitious, they have been generated randomly out of imagination, any resemblance of mock data with real people or account numbers is matter of sheer coincidence. The creator of this project not be/ cannot be held responsible for loss of any kind.
+<!-- 🚨 **USERS ARE REQUESTED TO INSTALL HADWIN ONLY FROM GOOGLE PLAY AND APP STORE (when HADWIN becomes available for iOS devices), HADWIN IS A FREE APP THUS REPORT AND INFORM ABOUT ANY PAID VERSION BEING DISTRIBUTED ANYWHERE** 🚨.  -->
+
+**HADWIN** has been created purely out of my own interest in building a sophisticated fund transfer platform for adding value to my portfolio. Again it is being reminded that users cannot transfer/receive real money through this app (as of now), users are warned and forbidden from using real credit/debit card numbers or bank account numbers. Users may and if possible should only test this application with [mock data](./docs/HADWIN_WIKI.md) provided from my personal API hosting server (**FruitCastle** ([source code 💡]((https://github.com/brownboycodes/FruitCastle))). Account numbers and User details are fictitious, they have been generated randomly out of imagination, any resemblance of mock data with real people or account numbers is matter of sheer coincidence. The creator of this project not be/ cannot be held responsible for loss of any kind.
+
 
 <br>
 

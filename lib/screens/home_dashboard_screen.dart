@@ -195,12 +195,12 @@ class HomeDashboardScreenState extends State<HomeDashboardScreen> {
         offset: Offset(119, -27),
         onSelected: (value) {
           if (value == _ScanOptions.ScanQRCode) {
-            Navigator.push(
-                    context, SlideRightRoute(page: QRCodeScannerScreen()))
-                .whenComplete(() => setState(() {}));
+            // Navigator.push(
+            //         context, SlideRightRoute(page: QRCodeScannerScreen()))
+            //     .whenComplete(() => setState(() {}));
           } else {
-            Navigator.push(context, SlideRightRoute(page: MyQRCodeScreen()))
-                .whenComplete(() => setState(() {}));
+            // Navigator.push(context, SlideRightRoute(page: MyQRCodeScreen()))
+            //     .whenComplete(() => setState(() {}));
           }
         },
         itemBuilder: (context) => [

@@ -1,3 +1,4 @@
+/*
 import 'dart:convert';
 import 'dart:developer';
 import 'dart:io';
@@ -128,3 +129,4 @@ class _QRCodeScannerScreenState extends State<QRCodeScannerScreen> {
     super.dispose();
   }
 }
+*/

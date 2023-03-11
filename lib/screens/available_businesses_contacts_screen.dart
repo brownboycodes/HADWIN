@@ -89,12 +89,12 @@ List<String> searchHintsList = [
         actions: [
           IconButton(
               onPressed: () {
-                Navigator.push(
-                    context,
-                    SlideRightRoute(
-                        page: widget.transactionType == 'debit'
-                            ? QRCodeScannerScreen()
-                            : MyQRCodeScreen()));
+                // Navigator.push(
+                //     context,
+                //     SlideRightRoute(
+                //         page: widget.transactionType == 'debit'
+                //             ? QRCodeScannerScreen()
+                //             : MyQRCodeScreen()));
               },
               icon: Icon(FluentIcons.qr_code_28_regular,
                   color: Color(0xff243656))),

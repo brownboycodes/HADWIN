@@ -38,7 +38,7 @@ dependencies:
   fluentui_system_icons: ^1.1.153
   http: ^0.13.4
   fade_shimmer: ^2.0.1
-  qr_code_scanner: ^0.6.1
+  # qr_code_scanner: ^0.6.1
   scrollable_positioned_list: ^0.2.3
   google_fonts: ^2.3.1
   lottie: ^1.2.2
@@ -47,7 +47,7 @@ dependencies:
   # concentric_transition: ^1.0.1+1
   concentric_transition: 1.0.1
   dotted_line: ^3.1.0
-  qr_flutter: ^4.0.0
+  # qr_flutter: ^4.0.0
   url_launcher: ^6.0.20
   google_nav_bar: ^5.0.6
   path_provider: ^2.0.9

@@ -233,7 +233,7 @@ class _AllContactsScreenState extends State<AllContactsScreen> {
 
   void openQRCodeScanner() {
     FocusManager.instance.primaryFocus?.unfocus();
-    Navigator.push(context, SlideRightRoute(page: QRCodeScannerScreen()));
+    // Navigator.push(context, SlideRightRoute(page: QRCodeScannerScreen()));
   }
 
   Widget buildContacts(

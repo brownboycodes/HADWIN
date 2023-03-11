@@ -1,8 +1,6 @@
 import 'package:fade_shimmer/fade_shimmer.dart';
 import 'package:flutter/material.dart';
-
-import 'package:hadwin/utilities/make_api_request.dart';
-import 'package:hadwin/utilities/url_external_launcher.dart';
+import 'package:hadwin/hadwin_components.dart';
 
 
 class AppCreatorInfoScreen extends StatelessWidget {
@@ -56,7 +54,7 @@ class AppCreatorInfoScreen extends StatelessWidget {
                                       maxWidth: 64.0,
                                       maxHeight: 64.0),
                                   child: Image.network(
-                                        'https://fruitcastle.herokuapp.com/dist/images/brownboycodes/social_icons/colorable/${social['avatar']}',
+                                        '${ApiConstants.baseUrl}/dist/images/brownboycodes/social_icons/colorable/${social['avatar']}',
                                       ),
                                     
                                 ))
@@ -75,7 +73,7 @@ class AppCreatorInfoScreen extends StatelessWidget {
                                 child: AspectRatio(
                                   aspectRatio: 1.0 / 1.0,
                                   child: Image.network(
-                                    'https://fruitcastle.herokuapp.com/dist/images/hadwin_images/attributions/${snapshot.data!['avatar']}',
+                                    '${ApiConstants.baseUrl}/dist/images/hadwin_images/attributions/${snapshot.data!['avatar']}',
                                     height: 120,
                                     width: 120,
                                     fit: BoxFit.contain,

@@ -1,17 +1,7 @@
 import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter/material.dart';
-
-import 'package:hadwin/components/wallet_screen/add_card_screen.dart';
-import 'package:hadwin/components/wallet_screen/available_cards_loading.dart';
-import 'package:hadwin/database/cards_storage.dart';
-
-import 'package:hadwin/providers/tab_navigation_provider.dart';
-
-import 'package:hadwin/screens/new_settings_screen.dart';
-
-import 'package:hadwin/utilities/slide_right_route.dart';
-
 import 'package:provider/provider.dart';
+import 'package:hadwin/hadwin_components.dart';
 
 class WalletScreen extends StatefulWidget {
   final Function setTab;
@@ -67,7 +57,7 @@ class _WalletScreenState extends State<WalletScreen> {
               radius: 64,
               child: ClipOval(
                 child: Image.network(
-                  "https://fruitcastle.herokuapp.com/dist/images/hadwin_images/hadwin_users/${widget.user['gender'].toLowerCase()}/${widget.user['avatar']}",
+                  "${ApiConstants.baseUrl}/dist/images/hadwin_images/hadwin_users/${widget.user['gender'].toLowerCase()}/${widget.user['avatar']}",
                   height: 120,
                   width: 120,
                   fit: BoxFit.cover,
@@ -286,7 +276,7 @@ class _WalletScreenState extends State<WalletScreen> {
                     child: Container(
                         color: Colors.white,
                         child: Image.network(
-                          "https://fruitcastle.herokuapp.com/dist/images/hadwin_images/hadwin_payment_system/square_card_brands/${cardData[index]['cardBrand'].replaceAll(' ', '-').toLowerCase()}.png",
+                          "${ApiConstants.baseUrl}/dist/images/hadwin_images/hadwin_payment_system/square_card_brands/${cardData[index]['cardBrand'].replaceAll(' ', '-').toLowerCase()}.png",
                           width: 48,
                           height: 48,
                         )),

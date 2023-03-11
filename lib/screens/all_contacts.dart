@@ -2,18 +2,8 @@ import 'dart:async';
 
 import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter/material.dart';
-
-import 'package:hadwin/components/contacts_screen/contacts_loading.dart';
-
-import 'package:hadwin/providers/tab_navigation_provider.dart';
-
-import 'package:hadwin/screens/fund_transfer_screen.dart';
-import 'package:hadwin/screens/qr_code_scanner_screen.dart';
-
-import 'package:hadwin/utilities/make_api_request.dart';
-import 'package:hadwin/utilities/display_error_alert.dart';
-import 'package:hadwin/utilities/slide_right_route.dart';
 import 'package:provider/provider.dart';
+import 'package:hadwin/hadwin_components.dart';
 
 class AllContactsScreen extends StatefulWidget {
   final String userAuthKey;
@@ -295,7 +285,7 @@ class _AllContactsScreenState extends State<AllContactsScreen> {
                       child: AspectRatio(
                         aspectRatio: 1.0 / 1.0,
                         child: Image.network(
-                          "https://fruitcastle.herokuapp.com/dist/images/hadwin_images/brands_and_businesses/${data[index]['avatar']}",
+                          "${ApiConstants.baseUrl}/dist/images/hadwin_images/brands_and_businesses/${data[index]['avatar']}",
                           height: 68,
                           width: 68,
                           fit: BoxFit.contain,

@@ -4,10 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'package:hadwin/components/fund_transfer_screen/transaction_processing_screen.dart';
 import 'package:hadwin/database/user_data_storage.dart';
+import 'package:hadwin/hadwin_components.dart';
 
-import 'package:hadwin/utilities/make_api_request.dart';
-
-import 'package:hadwin/utilities/slide_right_route.dart';
 
 class FundTransferScreen extends StatefulWidget {
   final Map<String, dynamic> otherParty;
@@ -157,7 +155,7 @@ class _FundTransferScreenState extends State<FundTransferScreen> {
                   backgroundColor: Color(0xffF5F7FA),
                   child: FutureBuilder<int>(
                     future: checkUrlValidity(
-                        "https://fruitcastle.herokuapp.com/dist/images/hadwin_images/brands_and_businesses/${widget.otherParty['avatar']}"),
+                        "${ApiConstants.baseUrl}/dist/images/hadwin_images/brands_and_businesses/${widget.otherParty['avatar']}"),
                     builder: (context, snapshot) {
                       Widget contactImage;
                       if (widget.otherParty.containsKey('emailAddress') &&
@@ -168,7 +166,7 @@ class _FundTransferScreenState extends State<FundTransferScreen> {
                             child: AspectRatio(
                               aspectRatio: 1.0 / 1.0,
                               child: Image.network(
-                                "https://fruitcastle.herokuapp.com/dist/images/hadwin_images/hadwin_users/${widget.otherParty['gender'].toLowerCase()}/${widget.otherParty['avatar']}",
+                                "${ApiConstants.baseUrl}/dist/images/hadwin_images/hadwin_users/${widget.otherParty['gender'].toLowerCase()}/${widget.otherParty['avatar']}",
                                 height: 72,
                                 width: 72,
                                 fit: BoxFit.contain,
@@ -180,7 +178,7 @@ class _FundTransferScreenState extends State<FundTransferScreen> {
                             child: AspectRatio(
                               aspectRatio: 1.0 / 1.0,
                               child: Image.network(
-                                "https://fruitcastle.herokuapp.com/dist/images/hadwin_images/brands_and_businesses/${widget.otherParty['avatar']}",
+                                "${ApiConstants.baseUrl}/dist/images/hadwin_images/brands_and_businesses/${widget.otherParty['avatar']}",
                                 height: 72,
                                 width: 72,
                                 fit: BoxFit.contain,
@@ -204,7 +202,7 @@ class _FundTransferScreenState extends State<FundTransferScreen> {
                                   BlendMode.saturation,
                                 ),
                                 child: Image.network(
-                                  "https://fruitcastle.herokuapp.com/dist/images/hadwin_images/brands_and_businesses/${widget.otherParty['avatar']}",
+                                  "${ApiConstants.baseUrl}/dist/images/hadwin_images/brands_and_businesses/${widget.otherParty['avatar']}",
                                   height: 72,
                                   width: 72,
                                   fit: BoxFit.contain,

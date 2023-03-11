@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:hadwin/hadwin_components.dart';
 
-import 'package:hadwin/components/sign_up_screen/sign_up_steps.dart';
+
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({Key? key}) : super(key: key);

@@ -25,7 +25,7 @@ class AllTransactionActivitiesState extends State<AllTransactionActivities> {
   List<bool> _activeToggleMenu = [true, false, false];
   Map<String, dynamic>? error = null;
   late TextEditingController activitySearch;
-  
+
   Widget appBarTitle =
       Text("Activities", style: TextStyle(color: Color(0xff243656)));
   Icon actionIcon = Icon(
@@ -37,15 +37,13 @@ class AllTransactionActivitiesState extends State<AllTransactionActivities> {
     super.initState();
 
     getTransactionsFromApi();
-    
+
     activitySearch = TextEditingController();
-    
   }
 
   void _updateTransactions() {
     if (mounted) {
       setState(() {
-       
         allTransactions.sort(
             (a, b) => b['transactionDate'].compareTo(a['transactionDate']));
         for (var transaction in allTransactions) {
@@ -60,7 +58,8 @@ class AllTransactionActivitiesState extends State<AllTransactionActivities> {
   void getTransactionsFromApi() async {
     final response = await Future.wait([
       getData(
-          urlPath: "${ApiConstants.server1}/all-transactions", authKey: widget.userAuthKey),
+          urlPath: "${ApiConstants.server1}/all-transactions",
+          authKey: widget.userAuthKey),
       SuccessfulTransactionsStorage().getSuccessfulTransactions()
     ]);
 
@@ -73,7 +72,6 @@ class AllTransactionActivitiesState extends State<AllTransactionActivities> {
       });
     } else {
       if (mounted) {
-       
         setState(() {
           allTransactions = [
             ...response[0]['transactions'],
@@ -88,9 +86,8 @@ class AllTransactionActivitiesState extends State<AllTransactionActivities> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-   
-     backgroundColor: Color(0xfffdfdfd),
-    //  backgroundColor: Color(0xfffcfcfc),
+        backgroundColor: Color(0xfffdfdfd),
+        //  backgroundColor: Color(0xfffcfcfc),
         appBar: AppBar(
           leading: IconButton(
               onPressed: () {
@@ -118,7 +115,6 @@ class AllTransactionActivitiesState extends State<AllTransactionActivities> {
                                 BorderRadius.all(Radius.circular(16.18))),
                         child: TextField(
                           controller: activitySearch,
-                      
                           autofocus: true,
                           textAlignVertical: TextAlignVertical.center,
                           onChanged: (value) {
@@ -149,9 +145,7 @@ class AllTransactionActivitiesState extends State<AllTransactionActivities> {
                         color: Color(0xff243656),
                       );
                     });
-                  
                   } else {
-               
                     activitySearch.clear();
                     FocusManager.instance.primaryFocus?.unfocus();
                     setState(() {
@@ -175,7 +169,6 @@ class AllTransactionActivitiesState extends State<AllTransactionActivities> {
             height: 96,
           ),
           Container(
-          
             decoration: BoxDecoration(
                 color: Color(0xffF5F7FA),
                 borderRadius: BorderRadius.circular(10)),
@@ -184,7 +177,6 @@ class AllTransactionActivitiesState extends State<AllTransactionActivities> {
               color: Color(0xff929BAB),
               fillColor: Color(0xFF0070BA),
               selectedColor: Colors.white,
-             
               renderBorder: false,
               children: <Widget>[
                 Padding(
@@ -294,10 +286,10 @@ class AllTransactionActivitiesState extends State<AllTransactionActivities> {
                       padding: EdgeInsets.all(0),
                       groupComparator: (a, b) => customGroupComparator(a, b),
                       useStickyGroupSeparators: true,
-                      stickyHeaderBackgroundColor: Color.fromARGB(252, 252, 252, 252),
+                      stickyHeaderBackgroundColor:
+                          Color.fromARGB(252, 252, 252, 252),
                       elements: currentTransactions,
                       groupBy: (transaction) => transaction['dateGroup'],
-                      
                       groupSeparatorBuilder: (String groupByValue) => Padding(
                         padding: EdgeInsets.symmetric(vertical: 10),
                         child: Text(
@@ -315,7 +307,7 @@ class AllTransactionActivitiesState extends State<AllTransactionActivities> {
                       itemBuilder: (context, transaction) {
                         Widget transactionMemberImage = FutureBuilder<int>(
                           future: checkUrlValidity(
-                              "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}${ApiConstants.brandsAndBusinesses}/${transaction['transactionMemberAvatar']}"),
+                              "${ApiConstants.baseUrl}${ApiConstants.remoteAssets}${ApiConstants.brandsAndBusinesses}/${transaction['transactionMemberAvatar']}"),
                           builder: (context, snapshot) {
                             if (transaction.containsKey(
                                     'transactionMemberBusinessWebsite') &&
@@ -326,7 +318,6 @@ class AllTransactionActivitiesState extends State<AllTransactionActivities> {
                                   aspectRatio: 1.0 / 1.0,
                                   child: ColorFiltered(
                                     colorFilter: ColorFilter.mode(
-                                    
                                       Color(0xff243656),
                                       BlendMode.color,
                                     ),
@@ -336,7 +327,7 @@ class AllTransactionActivitiesState extends State<AllTransactionActivities> {
                                         BlendMode.saturation,
                                       ),
                                       child: Image.network(
-                                        "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}${ApiConstants.brandsAndBusinesses}/${transaction['transactionMemberAvatar']}",
+                                        "${ApiConstants.baseUrl}${ApiConstants.remoteAssets}${ApiConstants.brandsAndBusinesses}/${transaction['transactionMemberAvatar']}",
                                         height: 72,
                                         width: 72,
                                         fit: BoxFit.contain,
@@ -355,7 +346,7 @@ class AllTransactionActivitiesState extends State<AllTransactionActivities> {
                                   child: AspectRatio(
                                     aspectRatio: 1.0 / 1.0,
                                     child: Image.network(
-                                      "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}/hadwin_users/${transaction['transactionMemberGender'].toLowerCase()}/${transaction['transactionMemberAvatar']}",
+                                      "${ApiConstants.baseUrl}${ApiConstants.remoteAssets}/hadwin_users/${transaction['transactionMemberGender'].toLowerCase()}/${transaction['transactionMemberAvatar']}",
                                       height: 72,
                                       width: 72,
                                       fit: BoxFit.contain,
@@ -367,7 +358,7 @@ class AllTransactionActivitiesState extends State<AllTransactionActivities> {
                                   child: AspectRatio(
                                     aspectRatio: 1.0 / 1.0,
                                     child: Image.network(
-                                      "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}${ApiConstants.brandsAndBusinesses}/${transaction['transactionMemberAvatar']}",
+                                      "${ApiConstants.baseUrl}${ApiConstants.remoteAssets}${ApiConstants.brandsAndBusinesses}/${transaction['transactionMemberAvatar']}",
                                       height: 72,
                                       width: 72,
                                       fit: BoxFit.contain,
@@ -388,12 +379,11 @@ class AllTransactionActivitiesState extends State<AllTransactionActivities> {
 
                         return Container(
                           padding: EdgeInsets.all(5),
-                        
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.all(Radius.circular(20)),
                             boxShadow: <BoxShadow>[
                               BoxShadow(
-                                /*
+                                  /*
                                   color: Color(0xffF5F7FA),
                                   blurRadius: 4,
                                   offset: Offset(0.0, 3),
@@ -402,8 +392,7 @@ class AllTransactionActivitiesState extends State<AllTransactionActivities> {
                                   color: Color(0xff1546a0).withOpacity(0.1),
                                   blurRadius: 48,
                                   offset: Offset(2, 8),
-                                  spreadRadius: -16
-                                  ),
+                                  spreadRadius: -16),
                             ],
                             color: Colors.white,
                           ),

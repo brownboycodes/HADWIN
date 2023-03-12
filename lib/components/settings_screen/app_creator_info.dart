@@ -2,7 +2,6 @@ import 'package:fade_shimmer/fade_shimmer.dart';
 import 'package:flutter/material.dart';
 import 'package:hadwin/hadwin_components.dart';
 
-
 class AppCreatorInfoScreen extends StatelessWidget {
   const AppCreatorInfoScreen({Key? key}) : super(key: key);
 
@@ -26,9 +25,8 @@ class AppCreatorInfoScreen extends StatelessWidget {
               child: Container(
             width: MediaQuery.of(context).size.width - 10,
             height: MediaQuery.of(context).size.height - 180,
-            
             child: FutureBuilder<Map<String, dynamic>>(
-                future: getData(urlPath:  "/about/brownboycodes"),
+                future: getData(urlPath: "/about/brownboycodes"),
                 builder: (context, snapshot) {
                   if (snapshot.hasData) {
                     List<Widget> socials =
@@ -54,9 +52,8 @@ class AppCreatorInfoScreen extends StatelessWidget {
                                       maxWidth: 64.0,
                                       maxHeight: 64.0),
                                   child: Image.network(
-                                        '${ApiConstants.baseUrl}/dist/images/brownboycodes/social_icons/colorable/${social['avatar']}',
-                                      ),
-                                    
+                                    '${ApiConstants.baseUrl}/dist/images/brownboycodes/social_icons/colorable/${social['avatar']}',
+                                  ),
                                 ))
                             .toList();
 
@@ -73,7 +70,7 @@ class AppCreatorInfoScreen extends StatelessWidget {
                                 child: AspectRatio(
                                   aspectRatio: 1.0 / 1.0,
                                   child: Image.network(
-                                    '${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}/attributions/${snapshot.data!['avatar']}',
+                                    '${ApiConstants.baseUrl}${ApiConstants.remoteAssets}/attributions/${snapshot.data!['avatar']}',
                                     height: 120,
                                     width: 120,
                                     fit: BoxFit.contain,
@@ -140,33 +137,33 @@ class AppCreatorInfoScreen extends StatelessWidget {
         spacing: 10,
         crossAxisAlignment: WrapCrossAlignment.center,
         children: [
-           Container(
-        child: FadeShimmer.round(
-          size: 128,
-          fadeTheme: FadeTheme.light,
-        ),
-        padding: EdgeInsets.all(5),
-      ),
           Container(
-      child: FadeShimmer(
-        radius: 16.18,
-        height: 28,
-        width: 120,
-        fadeTheme: FadeTheme.light,
-      ),
-      padding: EdgeInsets.all(2),
-    ),
+            child: FadeShimmer.round(
+              size: 128,
+              fadeTheme: FadeTheme.light,
+            ),
+            padding: EdgeInsets.all(5),
+          ),
+          Container(
+            child: FadeShimmer(
+              radius: 16.18,
+              height: 28,
+              width: 120,
+              fadeTheme: FadeTheme.light,
+            ),
+            padding: EdgeInsets.all(2),
+          ),
           SizedBox(
             width: MediaQuery.of(context).size.width - 96,
             child: Container(
-      child: FadeShimmer(
-        radius: 16.18,
-        height: 20,
-        width: 130,
-        fadeTheme: FadeTheme.light,
-      ),
-      padding: EdgeInsets.all(2),
-    ),
+              child: FadeShimmer(
+                radius: 16.18,
+                height: 20,
+                width: 130,
+                fadeTheme: FadeTheme.light,
+              ),
+              padding: EdgeInsets.all(2),
+            ),
           ),
           Container(
             width: MediaQuery.of(context).size.width - 10,
@@ -180,19 +177,16 @@ class AppCreatorInfoScreen extends StatelessWidget {
                     children: socials,
                   ),
                   Container(
-      child: FadeShimmer(
-        radius: 16.18,
-        height: 24,
-        width: 96,
-        fadeTheme: FadeTheme.light,
-      ),
-      padding: EdgeInsets.all(2),
-    )
+                    child: FadeShimmer(
+                      radius: 16.18,
+                      height: 24,
+                      width: 96,
+                      fadeTheme: FadeTheme.light,
+                    ),
+                    padding: EdgeInsets.all(2),
+                  )
                 ]),
           ),
         ]);
   }
-
- 
-
 }

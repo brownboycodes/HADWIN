@@ -44,7 +44,7 @@ class _AllContactsScreenState extends State<AllContactsScreen> {
           }
         });
         //* search hint updated
-      } 
+      }
     });
   }
 
@@ -80,7 +80,7 @@ class _AllContactsScreenState extends State<AllContactsScreen> {
     );
 
     return Scaffold(
-       
+
         // backgroundColor: Color(0xfffcfcfc),
         backgroundColor: Color(0xfffdfdfd),
         appBar: AppBar(
@@ -180,11 +180,11 @@ class _AllContactsScreenState extends State<AllContactsScreen> {
                           height: 48,
                           width: 100,
                           decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
+                              borderRadius: BorderRadius.circular(10),
                               gradient: RadialGradient(colors: [
-                            Color(0xff0070BA),
-                            Color(0xff1546A0)
-                          ], radius: 8.4, center: Alignment(-0.24, -0.36))),
+                                Color(0xff0070BA),
+                                Color(0xff1546A0)
+                              ], radius: 8.4, center: Alignment(-0.24, -0.36))),
                           child: ElevatedButton(
                               onPressed: () =>
                                   _makeATransaction(otherParty, 'credit'),
@@ -285,7 +285,7 @@ class _AllContactsScreenState extends State<AllContactsScreen> {
                       child: AspectRatio(
                         aspectRatio: 1.0 / 1.0,
                         child: Image.network(
-                          "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}${ApiConstants.brandsAndBusinesses}/${data[index]['avatar']}",
+                          "${ApiConstants.baseUrl}${ApiConstants.remoteAssets}${ApiConstants.brandsAndBusinesses}/${data[index]['avatar']}",
                           height: 68,
                           width: 68,
                           fit: BoxFit.contain,
@@ -314,17 +314,16 @@ class _AllContactsScreenState extends State<AllContactsScreen> {
                       borderRadius: BorderRadius.all(Radius.circular(20)),
                       boxShadow: <BoxShadow>[
                         BoxShadow(
-                          /*
+                            /*
                             color: Color(0xffF5F7FA),
                             blurRadius: 4,
                             offset: Offset(0.0, 3),
                             spreadRadius: 0
                             */
                             color: Color(0xff1546a0).withOpacity(0.1),
-                                  blurRadius: 48,
-                                  offset: Offset(2, 8),
-                                  spreadRadius: -16
-                            ),
+                            blurRadius: 48,
+                            offset: Offset(2, 8),
+                            spreadRadius: -16),
                       ],
                       color: Colors.white,
                     ),
@@ -342,8 +341,10 @@ class _AllContactsScreenState extends State<AllContactsScreen> {
                       ),
                       subtitle: Container(
                           margin: EdgeInsets.only(top: 7.2),
-                          child: Text(tileSubtitle,
-                          style: TextStyle(fontSize: 13,color: Color(0xff929BAB)),
+                          child: Text(
+                            tileSubtitle,
+                            style: TextStyle(
+                                fontSize: 13, color: Color(0xff929BAB)),
                           )),
                       horizontalTitleGap: 18,
                       onTap: () =>

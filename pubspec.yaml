@@ -39,25 +39,25 @@ dependencies:
   http: ^0.13.4
   fade_shimmer: ^2.0.1
   # qr_code_scanner: ^0.6.1
-  scrollable_positioned_list: ^0.2.3
-  google_fonts: ^2.3.1
+  scrollable_positioned_list: 0.2.3
+  google_fonts: 2.3.1
   lottie: ^1.2.2
-  socket_io_client: ^1.0.2
-  grouped_list: ^4.2.0
+  socket_io_client: ^2.0.1
+  grouped_list: ^5.1.2
   # concentric_transition: ^1.0.1+1
-  concentric_transition: 1.0.1
+  concentric_transition: ^1.0.3
   dotted_line: ^3.1.0
   # qr_flutter: ^4.0.0
   url_launcher: ^6.0.20
   google_nav_bar: ^5.0.6
   path_provider: ^2.0.9
-  markdown_widget: ^1.2.8
+  markdown_widget: 1.2.8
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_launcher_icons: "^0.9.2"
+  flutter_launcher_icons: ^0.11.0
   flutter_native_splash: ^2.0.1+1
 
 flutter_native_splash:

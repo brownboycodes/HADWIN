@@ -48,7 +48,7 @@ class _TransactionProcessingScreenState
           _transactionStatusAnimation = {
             
             'url':
-                'https://assets3.lottiefiles.com/packages/lf20_tl52xzvn.json',
+                AnimationAssetConstants.taskFailed,
             
             'width': 128.0,
             'text': 'transaction amount is invalid'
@@ -67,7 +67,7 @@ class _TransactionProcessingScreenState
           _transactionStatusAnimation = {
             
             'url':
-                'https://assets3.lottiefiles.com/packages/lf20_tl52xzvn.json',
+                AnimationAssetConstants.taskFailed,
             
             'width': 128.0,
             'text': 'transaction amount exceeds\navailable balance'
@@ -85,7 +85,7 @@ class _TransactionProcessingScreenState
         error = 'none';
         _transactionStatusAnimation = {
           
-          'url': 'https://assets3.lottiefiles.com/packages/lf20_tl52xzvn.json',
+          'url': AnimationAssetConstants.taskFailed,
           
           'width': 128.0,
           'text': 'Sorry,\n transfer of only \$10000\nallowed per transaction'
@@ -202,7 +202,7 @@ class _TransactionProcessingScreenState
         setState(() {
           _transactionStatusAnimation = {  
             'url':
-                'https://assets3.lottiefiles.com/packages/lf20_tl52xzvn.json',        
+                AnimationAssetConstants.taskFailed,        
             'width': 128.0,
             'text': 'Sorry,\nyour transaction failed'
           };

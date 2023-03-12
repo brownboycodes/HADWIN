@@ -222,7 +222,7 @@ class AppSettingsComponent extends StatelessWidget {
             page: HadWinMarkdownViewer(
           screenName: screenName,
           urlRequested:
-              'https://raw.githubusercontent.com/brownboycodes/HADWIN/master/docs/$docName.md',
+              '${DocsConstants.baseUrl}/$docName.md',
         )));
   }
 }

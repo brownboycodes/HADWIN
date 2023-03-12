@@ -149,7 +149,7 @@ class _SignUpStepsState extends State<SignUpSteps> {
                                           page: HadWinMarkdownViewer(
                                         screenName: "Terms & Conditons",
                                         urlRequested:
-                                            'https://raw.githubusercontent.com/brownboycodes/HADWIN/master/docs/TERMS_AND_CONDITIONS.md',
+                                            DocsConstants.termsAndConditions,
                                       ))));
                             }),
                             TextSpan( text: ' and our ',
@@ -169,7 +169,7 @@ class _SignUpStepsState extends State<SignUpSteps> {
                                           page: HadWinMarkdownViewer(
                                         screenName: "End User License Agreement",
                                         urlRequested:
-                                            'https://raw.githubusercontent.com/brownboycodes/HADWIN/master/docs/END_USER_LICENSE_AGREEMENT.md',
+                                            DocsConstants.endUserLicenseAgreement,
                                       ))));
                             })
                     ]))),

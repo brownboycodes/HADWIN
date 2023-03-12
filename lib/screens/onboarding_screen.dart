@@ -126,7 +126,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           curve: Curves.ease,
           duration: Duration(seconds: 2),
           itemCount: pages.length,
-          itemBuilder: (index, value) {
+          itemBuilder: (index) {
             // PageData page = pages[index % pages.length];
             PageData page = pages[index];
             return Column(children: [

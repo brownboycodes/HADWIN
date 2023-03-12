@@ -42,7 +42,7 @@ class HomeDashboardScreenState extends State<HomeDashboardScreen> {
             radius: 26,
             child: ClipOval(
               child: Image.network(
-                "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}/hadwin_users/${widget.user['gender'].toLowerCase()}/${widget.user['avatar']}",
+                "${ApiConstants.baseUrl}${ApiConstants.remoteAssets}/hadwin_users/${widget.user['gender'].toLowerCase()}/${widget.user['avatar']}",
                 height: 48,
                 width: 48,
                 fit: BoxFit.cover,
@@ -72,7 +72,6 @@ class HomeDashboardScreenState extends State<HomeDashboardScreen> {
               height: 480,
             ),
           ),
-        
           left: -156,
           top: -96),
       Positioned(
@@ -270,7 +269,7 @@ class HomeDashboardScreenState extends State<HomeDashboardScreen> {
 
     return Scaffold(
         // backgroundColor: Color.fromARGB(255, 253, 253, 253),
- backgroundColor: Color(0xfffcfcfc),
+        backgroundColor: Color(0xfffcfcfc),
         appBar: AppBar(
           actions: dashboardActions,
           backgroundColor: Colors.transparent,
@@ -319,7 +318,7 @@ class HomeDashboardScreenState extends State<HomeDashboardScreen> {
           itemBuilder: (BuildContext context, int index) {
             Widget transactionMemberImage = FutureBuilder<int>(
               future: checkUrlValidity(
-                  "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}${ApiConstants.brandsAndBusinesses}/${currentTransactions[index]['transactionMemberAvatar']}"),
+                  "${ApiConstants.baseUrl}${ApiConstants.remoteAssets}${ApiConstants.brandsAndBusinesses}/${currentTransactions[index]['transactionMemberAvatar']}"),
               builder: (context, snapshot) {
                 if (currentTransactions[index]
                         .containsKey('transactionMemberBusinessWebsite') &&
@@ -339,7 +338,7 @@ class HomeDashboardScreenState extends State<HomeDashboardScreen> {
                             BlendMode.saturation,
                           ),
                           child: Image.network(
-                            "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}${ApiConstants.brandsAndBusinesses}/${currentTransactions[index]['transactionMemberAvatar']}",
+                            "${ApiConstants.baseUrl}${ApiConstants.remoteAssets}${ApiConstants.brandsAndBusinesses}/${currentTransactions[index]['transactionMemberAvatar']}",
                             height: 72,
                             width: 72,
                             fit: BoxFit.contain,
@@ -358,7 +357,7 @@ class HomeDashboardScreenState extends State<HomeDashboardScreen> {
                       child: AspectRatio(
                         aspectRatio: 1.0 / 1.0,
                         child: Image.network(
-                          "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}/hadwin_users/${currentTransactions[index]['transactionMemberGender'].toLowerCase()}/${currentTransactions[index]['transactionMemberAvatar']}",
+                          "${ApiConstants.baseUrl}${ApiConstants.remoteAssets}/hadwin_users/${currentTransactions[index]['transactionMemberGender'].toLowerCase()}/${currentTransactions[index]['transactionMemberAvatar']}",
                           height: 72,
                           width: 72,
                           fit: BoxFit.contain,
@@ -370,7 +369,7 @@ class HomeDashboardScreenState extends State<HomeDashboardScreen> {
                       child: AspectRatio(
                         aspectRatio: 1.0 / 1.0,
                         child: Image.network(
-                          "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}${ApiConstants.brandsAndBusinesses}/${currentTransactions[index]['transactionMemberAvatar']}",
+                          "${ApiConstants.baseUrl}${ApiConstants.remoteAssets}${ApiConstants.brandsAndBusinesses}/${currentTransactions[index]['transactionMemberAvatar']}",
                           height: 72,
                           width: 72,
                           fit: BoxFit.contain,
@@ -394,17 +393,16 @@ class HomeDashboardScreenState extends State<HomeDashboardScreen> {
                 borderRadius: BorderRadius.all(Radius.circular(20)),
                 boxShadow: <BoxShadow>[
                   BoxShadow(
-                    /*
+                      /*
                     color: Color(0xffF5F7FA),
                     blurRadius: 4,
                     offset: Offset(0.0, 3),
                     spreadRadius: 0
                  */
-                color: Color(0xff1546a0).withOpacity(0.1),
-                                  blurRadius: 48,
-                                  offset: Offset(2, 8),
-                                  spreadRadius: -16
-                  ),
+                      color: Color(0xff1546a0).withOpacity(0.1),
+                      blurRadius: 48,
+                      offset: Offset(2, 8),
+                      spreadRadius: -16),
                 ],
                 color: Colors.white,
               ),
@@ -477,7 +475,8 @@ class HomeDashboardScreenState extends State<HomeDashboardScreen> {
   void getTransactionsFromApi() async {
     response = await Future.wait([
       getData(
-          urlPath: "${ApiConstants.server1}/all-transactions", authKey: widget.userAuthKey!),
+          urlPath: "${ApiConstants.server1}/all-transactions",
+          authKey: widget.userAuthKey!),
       SuccessfulTransactionsStorage().getSuccessfulTransactions()
     ]);
 

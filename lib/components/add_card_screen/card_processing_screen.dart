@@ -61,7 +61,7 @@ class _CardProcessingScreenState extends State<CardProcessingScreen>
               color: Colors.transparent,
               width: 300,
               child: Lottie.network(
-                  'https://assets2.lottiefiles.com/packages/lf20_uub9r8ta.json',
+                  AnimationAssetConstants.failedToAddCard,
                   repeat: false,
                   controller: cardProcessingAnimationController,
                   onLoaded: (composition) {
@@ -88,7 +88,7 @@ class _CardProcessingScreenState extends State<CardProcessingScreen>
               color: Colors.transparent,
               width: 136,
               child: Lottie.network(
-                  'https://assets3.lottiefiles.com/packages/lf20_tl52xzvn.json',
+                  AnimationAssetConstants.taskFailed,
                   repeat: false,
                   controller: cardProcessingAnimationController,
                   onLoaded: (composition) {

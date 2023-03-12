@@ -51,13 +51,13 @@ class _WalletScreenState extends State<WalletScreen> {
         ),
         Positioned(
             // top: 128,
-            bottom:-60,
+            bottom: -60,
             child: CircleAvatar(
               backgroundColor: Colors.white,
               radius: 64,
               child: ClipOval(
                 child: Image.network(
-                  "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}/hadwin_users/${widget.user['gender'].toLowerCase()}/${widget.user['avatar']}",
+                  "${ApiConstants.baseUrl}${ApiConstants.remoteAssets}/hadwin_users/${widget.user['gender'].toLowerCase()}/${widget.user['avatar']}",
                   height: 120,
                   width: 120,
                   fit: BoxFit.cover,
@@ -193,7 +193,7 @@ class _WalletScreenState extends State<WalletScreen> {
     );
 
     return Scaffold(
-       backgroundColor: Color(0xfffdfdfd),
+        backgroundColor: Color(0xfffdfdfd),
         //  backgroundColor: Color(0xfffcfcfc),
         appBar: AppBar(
           leading: IconButton(
@@ -226,7 +226,6 @@ class _WalletScreenState extends State<WalletScreen> {
       Navigator.push(context, SlideRightRoute(page: AddCardScreen()))
           .then((value) {
         setState(() {});
-     
       });
 
   Widget _buildAvailableCards(
@@ -243,17 +242,16 @@ class _WalletScreenState extends State<WalletScreen> {
             borderRadius: BorderRadius.all(Radius.circular(20)),
             boxShadow: <BoxShadow>[
               BoxShadow(
-                /*
+                  /*
                   color: Color(0xffF5F7FA),
                   blurRadius: 4,
                   offset: Offset(0.0, 3),
                   spreadRadius: 0
                   */
                   color: Color(0xff1546a0).withOpacity(0.1),
-                                  blurRadius: 48,
-                                  offset: Offset(2, 8),
-                                  spreadRadius: -16
-                  ),
+                  blurRadius: 48,
+                  offset: Offset(2, 8),
+                  spreadRadius: -16),
             ],
             color: Colors.white,
           ),
@@ -276,7 +274,7 @@ class _WalletScreenState extends State<WalletScreen> {
                     child: Container(
                         color: Colors.white,
                         child: Image.network(
-                          "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}${ApiConstants.squareCardBrands}/${cardData[index]['cardBrand'].replaceAll(' ', '-').toLowerCase()}.png",
+                          "${ApiConstants.baseUrl}${ApiConstants.remoteAssets}${ApiConstants.squareCardBrands}/${cardData[index]['cardBrand'].replaceAll(' ', '-').toLowerCase()}.png",
                           width: 48,
                           height: 48,
                         )),
@@ -289,8 +287,10 @@ class _WalletScreenState extends State<WalletScreen> {
                   color: Color(0xff243656),
                   fontSize: 16.5),
             ),
-            subtitle: Text(_formatCardNumber(cardData[index]['cardNumber']),
-                style: TextStyle(fontSize: 13,color: Color(0xff929BAB)),),
+            subtitle: Text(
+              _formatCardNumber(cardData[index]['cardNumber']),
+              style: TextStyle(fontSize: 13, color: Color(0xff929BAB)),
+            ),
           ),
         ),
         separatorBuilder: (_, b) => Divider(
@@ -387,8 +387,7 @@ class _WalletScreenState extends State<WalletScreen> {
                           child: ElevatedButton(
                               onPressed: () => _deleteSelectedCard(cardNumber),
                               child: Text('Delete'),
-                              style: buttonStyle
-                              ),
+                              style: buttonStyle),
                         ),
                         SizedBox(
                           width: 24,

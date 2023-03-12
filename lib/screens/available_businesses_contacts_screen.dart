@@ -22,16 +22,16 @@ class _AvailableBusinessesAndContactsScreenState
   late String transactionButton;
   late TextEditingController contactSearchController;
 
-List<String> searchHintsList = [
-      'Search...',
-      'Search for a contact by their name',
-      'Search for a business',
-      'Search by their phone number',
-      'Search by their email id',
-      'Search by their website'
-    ];
-    int currentSearchHintIndex = 0;
-    Timer? _updateContactsSearchingHintTimer;
+  List<String> searchHintsList = [
+    'Search...',
+    'Search for a contact by their name',
+    'Search for a business',
+    'Search by their phone number',
+    'Search by their email id',
+    'Search by their website'
+  ];
+  int currentSearchHintIndex = 0;
+  Timer? _updateContactsSearchingHintTimer;
   @override
   void initState() {
     super.initState();
@@ -41,13 +41,13 @@ List<String> searchHintsList = [
         Timer.periodic(Duration(seconds: 10), (timer) {
       if (mounted && contactSearchController.text.isEmpty) {
         setState(() {
-        if (currentSearchHintIndex == searchHintsList.length - 1) {
-        currentSearchHintIndex = 0;
-      } else {
-        currentSearchHintIndex++;
-      }
-      });
-     //* search hint updated
+          if (currentSearchHintIndex == searchHintsList.length - 1) {
+            currentSearchHintIndex = 0;
+          } else {
+            currentSearchHintIndex++;
+          }
+        });
+        //* search hint updated
       }
     });
   }
@@ -63,12 +63,10 @@ List<String> searchHintsList = [
   Widget build(BuildContext context) {
     String userAuthKey =
         Provider.of<UserLoginStateProvider>(context).userLoginAuthKey;
-    
 
     String currentSearchHint = searchHintsList[currentSearchHintIndex];
     return Scaffold(
-    
-    backgroundColor: Color(0xfffdfdfd),
+      backgroundColor: Color(0xfffdfdfd),
       // backgroundColor: Color(0xfffcfcfc),
       appBar: AppBar(
         leading: IconButton(
@@ -136,7 +134,8 @@ List<String> searchHintsList = [
                       urlPath: "${ApiConstants.server2}/businesses-and-brands",
                       authKey: userAuthKey),
                   getData(
-                      urlPath: "${ApiConstants.server3}/all-contacts", authKey: userAuthKey)
+                      urlPath: "${ApiConstants.server3}/all-contacts",
+                      authKey: userAuthKey)
                 ]),
                 builder: (context, snapshot) {
                   List<Widget> children;
@@ -158,12 +157,10 @@ List<String> searchHintsList = [
                       WidgetsBinding.instance!.addPostFrameCallback(
                           (_) => showErrorAlert(context, error));
 
-                     
-
                       return contactsLoadingList(10);
                     } else {
                       List<dynamic> data;
-                   
+
                       if (contactSearchController.text.isEmpty) {
                         data = [
                           ...snapshot.data![0]['businesses'],
@@ -174,11 +171,11 @@ List<String> searchHintsList = [
                           ...snapshot.data![0]['businesses'],
                           ...snapshot.data![1]['contacts']
                         ];
-                   
+
                         List<dynamic> nameMatch = data
-                            .where((contact) =>
-                                RegExp("${contactSearchController.text.toLowerCase()}")
-                                    .hasMatch(contact['name'].toLowerCase()))
+                            .where((contact) => RegExp(
+                                    "${contactSearchController.text.toLowerCase()}")
+                                .hasMatch(contact['name'].toLowerCase()))
                             .toList();
                         List<dynamic> emailMatch = data
                             .where((contact) =>
@@ -229,7 +226,6 @@ List<String> searchHintsList = [
                                       aspectRatio: 1.0 / 1.0,
                                       child: ColorFiltered(
                                         colorFilter: ColorFilter.mode(
-                                        
                                           Color(0xff243656),
                                           BlendMode.color,
                                         ),
@@ -239,7 +235,7 @@ List<String> searchHintsList = [
                                             BlendMode.saturation,
                                           ),
                                           child: Image.network(
-                                            "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}${ApiConstants.brandsAndBusinesses}/${data[index]['avatar']}",
+                                            "${ApiConstants.baseUrl}${ApiConstants.remoteAssets}${ApiConstants.brandsAndBusinesses}/${data[index]['avatar']}",
                                             height: 72,
                                             width: 72,
                                             fit: BoxFit.contain,
@@ -255,7 +251,7 @@ List<String> searchHintsList = [
                                     child: AspectRatio(
                                       aspectRatio: 1.0 / 1.0,
                                       child: Image.network(
-                                        "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}${ApiConstants.brandsAndBusinesses}/${data[index]['avatar']}",
+                                        "${ApiConstants.baseUrl}${ApiConstants.remoteAssets}${ApiConstants.brandsAndBusinesses}/${data[index]['avatar']}",
                                         height: 72,
                                         width: 72,
                                         fit: BoxFit.contain,
@@ -290,17 +286,17 @@ List<String> searchHintsList = [
                                         BorderRadius.all(Radius.circular(20)),
                                     boxShadow: <BoxShadow>[
                                       BoxShadow(
-                                        /*
+                                          /*
                                           color: Color(0xffF5F7FA),
                                           blurRadius: 4,
                                           offset: Offset(0.0, 3),
                                           spreadRadius: 0
                                           */
-                                          color: Color(0xff1546a0).withOpacity(0.1),
-                                  blurRadius: 48,
-                                  offset: Offset(2, 8),
-                                  spreadRadius: -16
-                                          ),
+                                          color: Color(0xff1546a0)
+                                              .withOpacity(0.1),
+                                          blurRadius: 48,
+                                          offset: Offset(2, 8),
+                                          spreadRadius: -16),
                                     ],
                                     color: Colors.white,
                                   ),
@@ -319,7 +315,12 @@ List<String> searchHintsList = [
                                     ),
                                     subtitle: Container(
                                         margin: EdgeInsets.only(top: 7.2),
-                                        child: Text(tileSubtitle,style: TextStyle(fontSize: 13,color: Color(0xff929BAB)),)),
+                                        child: Text(
+                                          tileSubtitle,
+                                          style: TextStyle(
+                                              fontSize: 13,
+                                              color: Color(0xff929BAB)),
+                                        )),
                                     onTap: () {
                                       Navigator.push(
                                           context,

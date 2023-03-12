@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'package:hadwin/hadwin_components.dart';
 
-
 class CreditsScreen extends StatelessWidget {
   const CreditsScreen({Key? key}) : super(key: key);
 
@@ -33,7 +32,6 @@ class CreditsScreen extends StatelessWidget {
                         return ListView.separated(
                           itemBuilder: (_, index) => Container(
                             width: MediaQuery.of(context).size.width - 10,
-
                             color: Colors.transparent,
                             margin: EdgeInsets.symmetric(
                                 vertical: 3, horizontal: 6.18),
@@ -77,14 +75,13 @@ class CreditsScreen extends StatelessWidget {
                                                           Color(0xff343a40))),
                                             )
                                           ]),
-                                    
                                       RawMaterialButton(
                                         onPressed: () {
-                                          if ( snapshot.data!['attributions']
-                                                  [index]['website'] is String) {
+                                          if (snapshot.data!['attributions']
+                                              [index]['website'] is String) {
                                             launchExternalURL(
-                                              snapshot.data!['attributions']
-                                                  [index]['website']);
+                                                snapshot.data!['attributions']
+                                                    [index]['website']);
                                           }
                                         },
                                         clipBehavior: Clip.antiAlias,
@@ -98,8 +95,7 @@ class CreditsScreen extends StatelessWidget {
                                             maxWidth: 64.0,
                                             maxHeight: 64.0),
                                         child: Image.network(
-                                            '${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}/attributions/${snapshot.data!['attributions'][index]['avatar']}'),
-                              
+                                            '${ApiConstants.baseUrl}${ApiConstants.remoteAssets}/attributions/${snapshot.data!['attributions'][index]['avatar']}'),
                                         shape: RoundedRectangleBorder(
                                             borderRadius: BorderRadius.all(
                                                 Radius.circular(16.18))),
@@ -124,7 +120,6 @@ class CreditsScreen extends StatelessWidget {
                                 Container(
                                   height: 72,
                                   width: MediaQuery.of(context).size.width - 10,
-
                                   color: Colors.transparent,
                                   child: ListView.separated(
                                       padding:
@@ -149,7 +144,6 @@ class CreditsScreen extends StatelessWidget {
                                             hoverElevation: 0,
                                             disabledElevation: 0,
                                             highlightElevation: 0,
-
                                             constraints: BoxConstraints(
                                                 minWidth: 48.0,
                                                 minHeight: 48.0,
@@ -157,7 +151,6 @@ class CreditsScreen extends StatelessWidget {
                                                 maxHeight: 48.0),
                                             child: Image.network(
                                                 '${ApiConstants.baseUrl}/dist/images/brownboycodes/social_icons/${snapshot.data!['attributions'][index]['socials'][socialIndex]['avatar']}'),
-                                
                                             shape: RoundedRectangleBorder(
                                                 borderRadius: BorderRadius.all(
                                                     Radius.circular(16.18))),
@@ -177,7 +170,6 @@ class CreditsScreen extends StatelessWidget {
                             ),
                           ),
                           separatorBuilder: (_, b) => Divider(
-                
                             thickness: 16,
                             color: Colors.blueGrey.shade50.withOpacity(0.618),
                           ),
@@ -192,5 +184,4 @@ class CreditsScreen extends StatelessWidget {
       ),
     );
   }
-
 }

@@ -128,3 +128,10 @@ lib/components/sign_up_screen/form_component.dart
 #local-test-data
 assets/data
 assets/images/local
+
+# iOS/XCode related
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/ephemeral
+**/ios/Flutter/flutter_export_environment.sh
+
+

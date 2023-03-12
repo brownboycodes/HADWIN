@@ -4,7 +4,6 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'package:hadwin/hadwin_components.dart';
 
-
 class FundTransferScreen extends StatefulWidget {
   final Map<String, dynamic> otherParty;
   final String transactionType;
@@ -46,12 +45,12 @@ class _FundTransferScreenState extends State<FundTransferScreen> {
               fontWeight: FontWeight.w700),
         ),
         style: ElevatedButton.styleFrom(
-            primary: Colors.white,
-            shape: CircleBorder(),
-            elevation: 0,
-            // elevation: 0.618,
-            // shadowColor: Color(0xffF5F7FA)
-            ),
+          primary: Colors.white,
+          shape: CircleBorder(),
+          elevation: 0,
+          // elevation: 0.618,
+          // shadowColor: Color(0xffF5F7FA)
+        ),
       ),
       ElevatedButton(
         onPressed: _addDecimal,
@@ -63,12 +62,12 @@ class _FundTransferScreenState extends State<FundTransferScreen> {
               fontWeight: FontWeight.w700),
         ),
         style: ElevatedButton.styleFrom(
-            primary: Colors.white,
-            shape: CircleBorder(),
-            // elevation: 0.618,
-            elevation: 0,
-            // shadowColor: Color(0xffF5F7FA)
-            ),
+          primary: Colors.white,
+          shape: CircleBorder(),
+          // elevation: 0.618,
+          elevation: 0,
+          // shadowColor: Color(0xffF5F7FA)
+        ),
       ),
       ElevatedButton(
         onPressed: _eraseDigits,
@@ -89,16 +88,20 @@ class _FundTransferScreenState extends State<FundTransferScreen> {
             shape: CircleBorder(),
             // elevation: .618,
             // shadowColor: Color(0xffF5F7FA)
-            elevation: 0
-            ),
+            elevation: 0),
       ),
-    ].map((e) => Container(
-      decoration: BoxDecoration(boxShadow: [BoxShadow(color: Color(0xff1546a0).withOpacity(0.1),
-                                  blurRadius: 48,
-                                  offset: Offset(20, 32),
-                                  spreadRadius: -16)]),
-      child: e,
-    )).toList();
+    ]
+        .map((e) => Container(
+              decoration: BoxDecoration(boxShadow: [
+                BoxShadow(
+                    color: Color(0xff1546a0).withOpacity(0.1),
+                    blurRadius: 48,
+                    offset: Offset(20, 32),
+                    spreadRadius: -16)
+              ]),
+              child: e,
+            ))
+        .toList();
     numPadKeys.addAll(bottomKeys);
     _transactionAmountController =
         TextEditingController(text: _controllerHelperText);
@@ -153,7 +156,7 @@ class _FundTransferScreenState extends State<FundTransferScreen> {
                   backgroundColor: Color(0xffF5F7FA),
                   child: FutureBuilder<int>(
                     future: checkUrlValidity(
-                        "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}${ApiConstants.brandsAndBusinesses}/${widget.otherParty['avatar']}"),
+                        "${ApiConstants.baseUrl}${ApiConstants.remoteAssets}${ApiConstants.brandsAndBusinesses}/${widget.otherParty['avatar']}"),
                     builder: (context, snapshot) {
                       Widget contactImage;
                       if (widget.otherParty.containsKey('emailAddress') &&
@@ -164,7 +167,7 @@ class _FundTransferScreenState extends State<FundTransferScreen> {
                             child: AspectRatio(
                               aspectRatio: 1.0 / 1.0,
                               child: Image.network(
-                                "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}/hadwin_users/${widget.otherParty['gender'].toLowerCase()}/${widget.otherParty['avatar']}",
+                                "${ApiConstants.baseUrl}${ApiConstants.remoteAssets}/hadwin_users/${widget.otherParty['gender'].toLowerCase()}/${widget.otherParty['avatar']}",
                                 height: 72,
                                 width: 72,
                                 fit: BoxFit.contain,
@@ -176,7 +179,7 @@ class _FundTransferScreenState extends State<FundTransferScreen> {
                             child: AspectRatio(
                               aspectRatio: 1.0 / 1.0,
                               child: Image.network(
-                                "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}${ApiConstants.brandsAndBusinesses}/${widget.otherParty['avatar']}",
+                                "${ApiConstants.baseUrl}${ApiConstants.remoteAssets}${ApiConstants.brandsAndBusinesses}/${widget.otherParty['avatar']}",
                                 height: 72,
                                 width: 72,
                                 fit: BoxFit.contain,
@@ -200,7 +203,7 @@ class _FundTransferScreenState extends State<FundTransferScreen> {
                                   BlendMode.saturation,
                                 ),
                                 child: Image.network(
-                                  "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}${ApiConstants.brandsAndBusinesses}/${widget.otherParty['avatar']}",
+                                  "${ApiConstants.baseUrl}${ApiConstants.remoteAssets}${ApiConstants.brandsAndBusinesses}/${widget.otherParty['avatar']}",
                                   height: 72,
                                   width: 72,
                                   fit: BoxFit.contain,
@@ -225,7 +228,10 @@ class _FundTransferScreenState extends State<FundTransferScreen> {
                   widget.otherParty['name'],
                   style: TextStyle(fontSize: 18),
                 ),
-                subtitle: Text(tileSubtitle, style: TextStyle(fontSize: 13,color: Color(0xff929BAB)),)),
+                subtitle: Text(
+                  tileSubtitle,
+                  style: TextStyle(fontSize: 13, color: Color(0xff929BAB)),
+                )),
           ),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 27, vertical: 13),
@@ -372,11 +378,11 @@ class _FundTransferScreenState extends State<FundTransferScreen> {
                 fontWeight: FontWeight.w700),
           ),
           style: ElevatedButton.styleFrom(
-              primary: Colors.white,
-              shape: CircleBorder(),
-              elevation: 0,
-              // shadowColor: Color(0xffF5F7FA)
-              ),
+            primary: Colors.white,
+            shape: CircleBorder(),
+            elevation: 0,
+            // shadowColor: Color(0xffF5F7FA)
+          ),
         ),
       );
 

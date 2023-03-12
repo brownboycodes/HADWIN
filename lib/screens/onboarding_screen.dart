@@ -1,9 +1,6 @@
 import 'package:concentric_transition/concentric_transition.dart';
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-
 import 'package:hadwin/hadwin_components.dart';
 
 class PageData {
@@ -101,7 +98,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             page: HadWinMarkdownViewer(
                 screenName: 'Docs',
                 urlRequested:
-                    ApiConstants.docsWiki)));
+                    DocsConstants.wiki)));
   }
 
   void completedOrientation() async {
@@ -129,7 +126,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           curve: Curves.ease,
           duration: Duration(seconds: 2),
           itemCount: pages.length,
-          itemBuilder: (index, value) {
+          itemBuilder: (index) {
             // PageData page = pages[index % pages.length];
             PageData page = pages[index];
             return Column(children: [

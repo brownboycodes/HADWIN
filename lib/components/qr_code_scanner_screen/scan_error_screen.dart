@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:hadwin/resources/asset_constants.dart';
 import 'package:lottie/lottie.dart';
 
 class ScanErrorScreen extends StatefulWidget {
@@ -53,7 +54,7 @@ class _ScanErrorScreenState extends State<ScanErrorScreen>
                 height: 100,
               ),
               Lottie.network(
-                  'https://assets6.lottiefiles.com/packages/lf20_4fewfamh.json',
+                  AnimationAssetConstants.qrCodeNotRecognized,
                   width: 300,
                   height: 300,
               

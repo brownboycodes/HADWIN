@@ -41,7 +41,7 @@ class _ChooseUsernameState extends State<ChooseUsername> {
     socket.on('username status', (data) {
       setState(() {
         usernameStatus = data;
-        
+
         // usernameStatus = data[0];
         // profilePicUrl = data[1];
       });
@@ -82,18 +82,16 @@ class _ChooseUsernameState extends State<ChooseUsername> {
             Row(
               children: [
                 CircleAvatar(
-                  backgroundColor: Colors.blueGrey.shade100,
-                 
-                  radius: 64,
-                  child: ClipOval(
-                child: Image.network(
-                  "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}/hadwin_users/${widget.userData['gender'].toLowerCase()}/${widget.userData['avatar']}",
-                  height: 120,
-                  width: 120,
-                  fit: BoxFit.cover,
-                ),
-              )
-                )
+                    backgroundColor: Colors.blueGrey.shade100,
+                    radius: 64,
+                    child: ClipOval(
+                      child: Image.network(
+                        "${ApiConstants.baseUrl}${ApiConstants.remoteAssets}/hadwin_users/${widget.userData['gender'].toLowerCase()}/${widget.userData['avatar']}",
+                        height: 120,
+                        width: 120,
+                        fit: BoxFit.cover,
+                      ),
+                    ))
               ],
               mainAxisAlignment: MainAxisAlignment.center,
             ),
@@ -214,7 +212,6 @@ class _ChooseUsernameState extends State<ChooseUsername> {
   void trySettingUsername() async {
     FocusManager.instance.primaryFocus?.unfocus();
     if (usernameField.text.isNotEmpty && usernameStatus == true) {
-     
       socket.disconnect();
       Map<String, dynamic> data = {
         ...widget.userData,

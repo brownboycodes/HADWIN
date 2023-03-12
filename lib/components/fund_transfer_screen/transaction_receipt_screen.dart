@@ -15,24 +15,25 @@ class TransactionReceiptScreen extends StatelessWidget {
       required this.transactionStatus})
       : super(key: key);
 
-
   @override
   Widget build(BuildContext context) {
     WidgetsBinding.instance!.addPostFrameCallback((timeStamp) =>
         Provider.of<LiveTransactionsProvider>(context, listen: false)
             .removeUnreadTransaction(transactionReceipt['transactionID']));
 
-    double screenWidth=MediaQuery.of(context).size.width;
+    double screenWidth = MediaQuery.of(context).size.width;
 // double screenWidth=360;
 
-TextStyle _receiptHeaders =
-      GoogleFonts.lato(color: Color(0xff929bab), fontSize: screenWidth<380? 14 :16);
-  TextStyle _receiptValues = GoogleFonts.chivo(
-      fontSize: screenWidth<380? 15 : 19, color: Color(0xff343a40), fontWeight: FontWeight.bold);
+    TextStyle _receiptHeaders = GoogleFonts.lato(
+        color: Color(0xff929bab), fontSize: screenWidth < 380 ? 14 : 16);
+    TextStyle _receiptValues = GoogleFonts.chivo(
+        fontSize: screenWidth < 380 ? 15 : 19,
+        color: Color(0xff343a40),
+        fontWeight: FontWeight.bold);
 
     Widget transactionMemberImage = FutureBuilder<int>(
       future: checkUrlValidity(
-          "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}${ApiConstants.brandsAndBusinesses}/${transactionReceipt['transactionMemberAvatar']}"),
+          "${ApiConstants.baseUrl}${ApiConstants.remoteAssets}${ApiConstants.brandsAndBusinesses}/${transactionReceipt['transactionMemberAvatar']}"),
       builder: (context, snapshot) {
         if (transactionReceipt
                 .containsKey('transactionMemberBusinessWebsite') &&
@@ -42,7 +43,6 @@ TextStyle _receiptHeaders =
               aspectRatio: 1.0 / 1.0,
               child: ColorFiltered(
                 colorFilter: ColorFilter.mode(
-             
                   Color(0xff243656),
                   BlendMode.color,
                 ),
@@ -50,10 +50,9 @@ TextStyle _receiptHeaders =
                   colorFilter: ColorFilter.mode(
                     Colors.grey,
                     BlendMode.saturation,
-              
                   ),
                   child: Image.network(
-                    "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}${ApiConstants.brandsAndBusinesses}/${transactionReceipt['transactionMemberAvatar']}",
+                    "${ApiConstants.baseUrl}${ApiConstants.remoteAssets}${ApiConstants.brandsAndBusinesses}/${transactionReceipt['transactionMemberAvatar']}",
                     height: 56,
                     width: 56,
                     fit: BoxFit.contain,
@@ -70,7 +69,7 @@ TextStyle _receiptHeaders =
               child: AspectRatio(
                 aspectRatio: 1.0 / 1.0,
                 child: Image.network(
-                  "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}/hadwin_users/${transactionReceipt['transactionMemberGender'].toLowerCase()}/${transactionReceipt['transactionMemberAvatar']}",
+                  "${ApiConstants.baseUrl}${ApiConstants.remoteAssets}/hadwin_users/${transactionReceipt['transactionMemberGender'].toLowerCase()}/${transactionReceipt['transactionMemberAvatar']}",
                   height: 56,
                   width: 56,
                   fit: BoxFit.contain,
@@ -82,7 +81,7 @@ TextStyle _receiptHeaders =
               child: AspectRatio(
                 aspectRatio: 1.0 / 1.0,
                 child: Image.network(
-                  "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}${ApiConstants.brandsAndBusinesses}/${transactionReceipt['transactionMemberAvatar']}",
+                  "${ApiConstants.baseUrl}${ApiConstants.remoteAssets}${ApiConstants.brandsAndBusinesses}/${transactionReceipt['transactionMemberAvatar']}",
                   height: 56,
                   width: 56,
                   fit: BoxFit.contain,
@@ -125,7 +124,7 @@ TextStyle _receiptHeaders =
                       clipper: ReceiptClipper(),
                       child: Container(
                         // height: MediaQuery.of(context).size.height -36,
-                        height:618,
+                        height: 618,
                         width: screenWidth - 72,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(7),
@@ -142,26 +141,22 @@ TextStyle _receiptHeaders =
                           child: CircleAvatar(
                             child: Image.asset(
                               AssetConstants.checkMark,
-                             
                             ),
                             radius: 36,
                           ),
                         )),
 
                     Positioned(
-                      top:
-                          155, 
+                      top: 155,
                       child: DottedLine(
                         direction: Axis.horizontal,
                         lineLength: screenWidth - 120,
                         lineThickness: 2.4,
                         dashLength: 12,
                         dashColor: Colors.grey.shade500,
-                 
                         dashRadius: 0.0,
                         dashGapLength: 3.0,
                         dashGapColor: Colors.transparent,
-                    
                         dashGapRadius: 0.0,
                       ),
                     ),
@@ -220,7 +215,6 @@ TextStyle _receiptHeaders =
                                       spacing: 3.6,
                                       children: [
                                         Text('DATE', style: _receiptHeaders),
-                                 
                                         SizedBox(
                                           width: MediaQuery.of(context)
                                                   .size
@@ -233,7 +227,6 @@ TextStyle _receiptHeaders =
                                             style: _receiptValues,
                                           ),
                                         ),
-                                     
                                       ],
                                     ),
                                     Wrap(
@@ -264,7 +257,6 @@ TextStyle _receiptHeaders =
                                   direction: Axis.horizontal,
                                   crossAxisAlignment: WrapCrossAlignment.center,
                                   alignment: WrapAlignment.spaceBetween,
-                                 
                                   children: [
                                     Wrap(
                                       direction: Axis.vertical,
@@ -279,7 +271,6 @@ TextStyle _receiptHeaders =
                                                 ? 'TO'
                                                 : 'FROM',
                                             style: _receiptHeaders),
-                                       
                                         SizedBox(
                                           width: MediaQuery.of(context)
                                                   .size
@@ -292,14 +283,12 @@ TextStyle _receiptHeaders =
                                             style: _receiptValues,
                                           ),
                                         ),
-                                     
                                         SizedBox(
                                             width: MediaQuery.of(context)
                                                     .size
                                                     .width /
                                                 2.4,
                                             child: Text(
-                                          
                                               transactionReceipt.containsKey(
                                                       'transactionMemberBusinessWebsite')
                                                   ? transactionReceipt[
@@ -365,7 +354,6 @@ TextStyle _receiptHeaders =
                                           padding: EdgeInsets.all(7.2),
                                           decoration: BoxDecoration(
                                               border: Border.all(
-                                                
                                                   color: Color(0xff76c893)),
                                               borderRadius:
                                                   BorderRadius.circular(6.18)),
@@ -387,21 +375,19 @@ TextStyle _receiptHeaders =
                     Positioned(
                         bottom: 14,
                         child: Container(
-                          height: 100,
-                      
-                          width: screenWidth - 96,
-                          decoration: BoxDecoration(
-                             
-                              color: Color(0xffbde0fe).withOpacity(0.618),
-                              borderRadius: BorderRadius.circular(7)),
-                          // child: Padding(
-                              padding: const EdgeInsets.all(6.0),
-                              child: FutureBuilder<Map<String, dynamic>>(
-                                future: CardsStorage().randomCard,
-                                builder: _financialInstrumentsBuilder,
-                              )
-                              // ),
-                        ))
+                            height: 100,
+                            width: screenWidth - 96,
+                            decoration: BoxDecoration(
+                                color: Color(0xffbde0fe).withOpacity(0.618),
+                                borderRadius: BorderRadius.circular(7)),
+                            // child: Padding(
+                            padding: const EdgeInsets.all(6.0),
+                            child: FutureBuilder<Map<String, dynamic>>(
+                              future: CardsStorage().randomCard,
+                              builder: _financialInstrumentsBuilder,
+                            )
+                            // ),
+                            ))
                   ],
                 ),
                 SizedBox(
@@ -441,20 +427,19 @@ TextStyle _receiptHeaders =
       BuildContext context, AsyncSnapshot<Map<String, dynamic>> snapshot) {
     if (snapshot.hasData) {
       final cardUsedInTransaction = snapshot.data!;
-      double screenWidth=MediaQuery.of(context).size.width;
+      double screenWidth = MediaQuery.of(context).size.width;
 
       return Wrap(
         spacing: 12,
         runSpacing: 6.4,
         crossAxisAlignment: WrapCrossAlignment.center,
-    
         runAlignment: WrapAlignment.center,
         direction: Axis.horizontal,
         children: [
           Container(
             margin: EdgeInsets.only(left: 8.4),
             child: Image.network(
-              "${ApiConstants.baseUrl}${ApiConstants.remoteAssetsofHadwin}${ApiConstants.squareCardBrands}/${cardUsedInTransaction['cardBrand'].replaceAll(' ', '-').toLowerCase()}.png",
+              "${ApiConstants.baseUrl}${ApiConstants.remoteAssets}${ApiConstants.squareCardBrands}/${cardUsedInTransaction['cardBrand'].replaceAll(' ', '-').toLowerCase()}.png",
               height: 72,
               width: 72,
             ),
@@ -463,19 +448,20 @@ TextStyle _receiptHeaders =
             height: 72,
             child: Wrap(
               direction: Axis.vertical,
-            
               alignment: WrapAlignment.spaceEvenly,
               children: [
                 Text(
                   'Credit/Debit Card',
                   style: GoogleFonts.roboto(
-                      fontSize: screenWidth<400? 16:18,
+                      fontSize: screenWidth < 400 ? 16 : 18,
                       color: Color(0xff343a40),
                       fontWeight: FontWeight.bold),
                 ),
                 Text(
                   "${_formatCardBrandName(cardUsedInTransaction['cardBrand'])} ending ${_formatCardNumber(cardUsedInTransaction['cardNumber'])}",
-                  style: GoogleFonts.heebo(fontSize: screenWidth<400? 11: 13, color: Color(0xff929bab)),
+                  style: GoogleFonts.heebo(
+                      fontSize: screenWidth < 400 ? 11 : 13,
+                      color: Color(0xff929bab)),
                 )
               ],
             ),
@@ -487,7 +473,6 @@ TextStyle _receiptHeaders =
         spacing: 6.4,
         runSpacing: 6.4,
         crossAxisAlignment: WrapCrossAlignment.center,
-    
         runAlignment: WrapAlignment.center,
         direction: Axis.horizontal,
         children: [
@@ -535,22 +520,16 @@ class ReceiptClipper extends CustomClipper<Path> {
   @override
   Path getClip(Size size) {
     Path path = Path();
-    
 
     path
-    
       ..lineTo(size.width, 0)
-     
       ..lineTo(size.width, 140)
-      
       ..cubicTo(size.width * .92, 140, size.width * .92, 170, size.width, 170)
       ..lineTo(size.width, size.height)
       ..lineTo(0, size.height)
       ..lineTo(0, 170)
-     
       ..cubicTo(size.width * .08, 170, size.width * .08, 140, 0, 140)
       ..lineTo(0, 0)
-    
       ..close();
 
     return path;
@@ -559,6 +538,5 @@ class ReceiptClipper extends CustomClipper<Path> {
   @override
   bool shouldReclip(covariant CustomClipper<Path> oldClipper) {
     return false;
-   
   }
 }

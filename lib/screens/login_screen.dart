@@ -72,8 +72,8 @@ class _LoginScreenState extends State<LoginScreen> {
         SlideRightRoute(
             page: HadWinMarkdownViewer(
                 screenName: 'Login Help',
-                urlRequested:
-                    'https://raw.githubusercontent.com/brownboycodes/HADWIN/master/docs/HADWIN_WIKI.md')));
+                urlRequested: DocsConstants.wiki
+                    )));
   }
 
   void goToSignUpScreen() {
